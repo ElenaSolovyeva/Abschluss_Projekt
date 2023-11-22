@@ -4,17 +4,7 @@
         <div class="main-nav-left-block">
             <button class="button burger-button" aria-label="Menu">Burger</button>
              @Html.Partial("ProjectLogoPartial")
-            <ul class="elements-nav">
-                <li class="elements-nav-item">
-                    <a class="elements-nav-link">Halle 1</a>
-                </li>
-                <li class="elements-nav-item">
-                    <a class="elements-nav-link">Halle 2</a>
-                </li>
-                <li class="elements-nav-item">
-                    <button class="button filter-button">filter</button>
-                </li>
-            </ul>
+             @Html.Partial("NavigationElementsPartial")
         </div>
         <div class="main-nav-center-block">
             <p class="user-name">John Snow</p>
