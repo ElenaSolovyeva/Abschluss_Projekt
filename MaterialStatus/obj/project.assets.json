@@ -8624,11 +8624,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\elena\\Desktop\\_Abschluss_Projekt\\MaterialStatus\\MaterialStatus.csproj",
+      "projectUniqueName": "C:\\Projects\\Abschluss_Projekt\\MaterialStatus\\MaterialStatus.csproj",
       "projectName": "MaterialStatus",
-      "projectPath": "C:\\Users\\elena\\Desktop\\_Abschluss_Projekt\\MaterialStatus\\MaterialStatus.csproj",
+      "projectPath": "C:\\Projects\\Abschluss_Projekt\\MaterialStatus\\MaterialStatus.csproj",
       "packagesPath": "C:\\Users\\elena\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\elena\\Desktop\\_Abschluss_Projekt\\MaterialStatus\\obj\\",
+      "outputPath": "C:\\Projects\\Abschluss_Projekt\\MaterialStatus\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
