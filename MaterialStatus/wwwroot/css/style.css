@@ -1,4 +1,11 @@
-﻿.viasually-hidden {
+﻿
+.main-filter-buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.viasually-hidden {
+    display: none;
 }
 
 

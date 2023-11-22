@@ -10,7 +10,13 @@
 <body>
     @Html.Partial("HeaderMainPagePartial") <!-- HEADER -->
     <main>
-        @Html.Partial("TableMaterialPartial")
+        <section class="tables">
+            <!--foreach  todo-->
+            @Html.Partial("TableMaterialPartial")
+        </section>
+        <aside class="filter-main"> <!--todo  viasually-hidden-->
+            @Html.Partial("ModalFilterMainPartial")
+        </aside>
     </main>
 
     @Html.Partial("FooterPartial") <!-- FOOTER -->
