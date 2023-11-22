@@ -486,13 +486,8 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\scopedcss\b
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.TagHelpers.input.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.TagHelpers.output.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.RazorCoreGenerate.cache
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\FooterPartial.cshtml.g.cs
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\HeaderAdminAreaPartial.cshtml.g.cs
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\HeaderHomePagePartial.cshtml.g.cs
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\HeaderLoginPartial.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\MainPage.cshtml.g.cs
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\TableMaterialPartial.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.RazorTargetAssemblyInfo.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.RazorTargetAssemblyInfo.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.Views.pdb
@@ -500,3 +495,9 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialSta
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.pdb
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.genruntimeconfig.cache
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\FooterPartial.cshtml.g.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\HeaderAdminAreaPartial.cshtml.g.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\HeaderLoginPartial.cshtml.g.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\HeaderMainPagePartial.cshtml.g.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ProjectLogoPartial.cshtml.g.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\TableMaterialPartial.cshtml.g.cs
