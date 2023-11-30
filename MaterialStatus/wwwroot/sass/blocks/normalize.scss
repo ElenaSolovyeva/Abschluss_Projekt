@@ -1,0 +1,39 @@
+﻿/* Reset dedefault styles */
+
+a {
+    text-decoration: none;
+    background-color: transparent;
+}
+
+body {
+    margin: 0;
+    font-family: 'roboto-bold-webfont', 'Arial', sans-serif;
+}
+
+
+
+ul {
+    list-style-type: none;
+}
+
+
+
+.main-filter-buttons {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.reset-botton {
+    margin: 0;
+    padding: 0;
+    background: initial;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+
+}
+
+
+.viasually-hidden {
+    display: none;
+}
