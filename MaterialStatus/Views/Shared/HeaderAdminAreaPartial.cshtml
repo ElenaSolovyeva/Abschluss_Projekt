@@ -1,1 +1,30 @@
-﻿
+﻿<header class="header">
+    <nav class="main-nav">
+        <div class="main-nav-left-block">
+            <!--
+            <button class="button burger-button" aria-label="Menu">Burger</button>
+            -->
+            @Html.Partial("ProjectLogoPartial")
+            @Html.Partial("NavigationAdminPartial")
+        </div>
+        <div class="main-nav-center-block">
+            <p class="user-name">John Snow</p>
+        </div>
+        <div class="main-nav-right-block">
+            <ul class="functional-nav">
+                <li class="functional-nav-item">
+                    <a class="home-link" href="#">Main page</a> <!--????????????????u-->
+                </li>
+                <li class="functional-nav-item">
+                    <a class="help-link">Hilfe</a>
+                </li>
+                <li class="functional-nav-item">
+                    <a class="logout-link">Ausloggen</a>
+                </li>
+                <li>
+                    <button class="button close-button" aria-label="Schliessen">Schließen</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
