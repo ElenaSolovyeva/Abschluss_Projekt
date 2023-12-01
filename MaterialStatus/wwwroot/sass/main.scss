@@ -1,7 +1,75 @@
 ﻿@font-face {
-    font-family: 'roboto-bold';
-    src: url('/fonts/roboto-bold-webfont.woff2') format('woff2');
+    font-family: 'Roboto';
+    src: url('/fonts/roboto-regular.woff2') format('woff2'), 
+         url('/fonts/roboto-regular.woff') format('woff');
 }
 
-
 @import "blocks/normalize.scss";
+@import "blocks/variables.scss";
+
+html {
+    box-sizing: border-box; // um die paddings und margins bei width: 100%; nicht aus dem Block fallen
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    color: $main-color;
+    font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+a {
+    margin: 0;
+    padding: 0;
+    color: $main-color;
+    text-decoration: none;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+.reset-button {
+    margin: 0;
+    padding: 0;
+    background: initial;
+    border: none;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.reset-list {
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap; /* Пробелы не учитываются, переносы строк в коде HTML игнорируются, весь текст отображается одной строкой;*/
+
+    clip: rect(0, 0, 0, 0);
+    clip-path: inset(100%);
+    overflow: hidden;
+}
+
+//Imports
+@import "blocks/header.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/filter-button.scss";

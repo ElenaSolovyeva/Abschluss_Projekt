@@ -1,0 +1,12 @@
+﻿.header {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    left: 0;
+    width: 100%;
+    min-width: $hd-width;
+    min-height: 50px;
+    background-color: $background-main-color;
+    box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
