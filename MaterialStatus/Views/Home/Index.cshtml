@@ -8,14 +8,15 @@
     <link type="text/css" rel="stylesheet" href="~/css/main.min.css"/>
 </head>
 <body>
-    
-    @Html.Partial("HeaderMainPagePartial") <!-- HEADER -->
-    <main>
+    @Html.Partial("HeaderMainPagePartial") <!-- HEADER  class="visually-hidden"-->
+    <main class="container">       
         <section class="tables">
+            <div><a name="top"></a></div>
             <!--foreach  todo-->
             @Html.Partial("TableMaterialPartial")
         </section>
-        <aside class="filter-main"> <!--todo  viasually-hidden-->
+        <aside class="filter-main">
+            <!--todo  viasually-hidden-->
             @Html.Partial("ModalFilterMainPartial")
         </aside>
     </main>

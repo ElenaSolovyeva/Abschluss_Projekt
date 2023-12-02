@@ -23,10 +23,26 @@ html {
 }
 
 body {
+    display: flex;
+    flex-direction: column;
+    min-width: $hd-width;
+    min-height: 100vh;
     margin: 0;
     padding: 0;
     color: $main-color;
     font-family: 'Roboto', 'Arial', sans-serif;
+}
+
+main {
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding: 70px 0 20px 0;
+    border: 1px solid red; //zu loeschen
+}
+
+footer {
+    flex-shrink: 0;
+    border: 1px solid blue; //zu loeschen
 }
 
 a {
@@ -49,6 +65,7 @@ ul {
     padding: 0;
     list-style-type: none;
 }
+
 
 .reset-button {
     margin: 0;
@@ -80,6 +97,7 @@ ul {
 }
 
 //Imports
+//--Header
 @import "blocks/header.scss";
 @import "blocks/filter-button.scss";
 @import "blocks/burger-button.scss";
@@ -92,3 +110,8 @@ ul {
 @import "blocks/admin-area-link.scss";
 @import "blocks/help-link.scss";
 @import "blocks/logout-link.scss";
+//--Footer
+@import "blocks/footer.scss";
+@import "blocks/emergency-service.scss";
+@import "blocks/rothenbacher-logo.scss";
+//
