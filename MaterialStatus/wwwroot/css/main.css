@@ -3,6 +3,10 @@
   font-family: 'Roboto';
   src: url("/fonts/roboto-regular.woff2") format("woff2"), url("/fonts/roboto-regular.woff") format("woff"); }
 
+@font-face {
+  font-family: 'Roboto-bold';
+  src: url("/fonts/roboto-bold.woff2") format("woff2"), url("/fonts/roboto-bold.woff") format("woff"); }
+
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 /* Document
    ========================================================================== */
@@ -332,7 +336,12 @@ img {
   max-width: 100%;
   height: auto; }
 
+p {
+  margin: 0; }
+
 ul {
+  margin: 0;
+  padding: 0;
   list-style-type: none; }
 
 .reset-button {
@@ -373,17 +382,51 @@ ul {
   background-color: #f0f0f0;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
+.filter-button {
+  height: 24px;
+  background-color: transparent; }
+  .filter-button:hover {
+    box-shadow: 0 3px 0 #ff6b00;
+    opacity: 0.7; }
+  .filter-button:focus {
+    box-shadow: 0 3px 0 #ff6b00;
+    opacity: 1; }
+
+.burger-button {
+  width: 24px;
+  height: 24px;
+  background-size: 24px 24px;
+  background-image: url("/images/icon_burger.svg"); }
+  .burger-button:hover {
+    background-image: url("/images/icon_burger_hover.svg"); }
+  .burger-button:focus {
+    background-image: url("/images/icon_burger_hover.svg");
+    opacity: 1; }
+
+.project-logo {
+  width: 190px;
+  height: 30px;
+  margin: 5px;
+  border: 1px solid forestgreen;
+  font-size: 26px;
+  font-weight: bold;
+  text-align: center; }
+
+.project-logo .first-char {
+  color: #ff6b00; }
+
 .main-nav {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   height: 100%;
-  font-size: 20px; }
+  padding: 10px; }
 
 .main-nav-block {
   display: flex;
-  justify-content: space-around; }
+  justify-content: space-around;
+  align-items: center; }
 
 .main-nav-left-block {
   width: 30%;
@@ -401,12 +444,97 @@ ul {
   margin-right: 2%;
   border: 1px solid orange; }
 
-.filter-button {
-  width: 24px;
+.nav-items {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 10px 0 10px;
+  width: 280px; }
+
+.nav-item {
   height: 24px;
-  border: none;
-  background-color: transparent;
-  background-size: 24px 24px;
-  background-image: url("/images/icon_filter.png"); }
-  .filter-button:active {
-    opacity: 0.6; }
+  margin: 0;
+  border: 1px solid forestgreen;
+  font-size: 22px; }
+
+.functional-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  font-size: 22px; }
+
+.functional-nav-item {
+  display: block;
+  height: 26px;
+  border: 1px solid forestgreen; }
+
+.main-page-link {
+  position: relative;
+  height: 24px;
+  padding-left: 30px;
+  font-size: 20px;
+  text-align: left; }
+  .main-page-link::before {
+    display: block;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    background-size: 24px 24px; }
+  .main-page-link:hover::before {
+    display: block;
+    position: absolute;
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    background-size: 24px 24px; }
+  .main-page-link:hover {
+    box-shadow: 0 3px #ff6b00;
+    opacity: 0.8; }
+  .main-page-link:active {
+    opacity: 0.5; }
+
+.user-name {
+  position: relative;
+  min-width: 200px;
+  text-align: left;
+  opacity: 0.6; }
+  .user-name::before {
+    display: block;
+    position: absolute;
+    content: " ";
+    top: -2px;
+    left: -30px;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    background-size: 24px 24px;
+    background-image: url("/images/icon_user.png"); }
+
+.admin-area-link::before {
+  background-image: url("/images/icon_admin.svg"); }
+
+.admin-area-link:hover::before {
+  background-image: url("/images/icon_admin_hover.svg"); }
+
+.help-link::before {
+  background-image: url("/images/icon_help.svg"); }
+
+.help-link:hover::before {
+  background-image: url("/images/icon_help_hover.svg"); }
+
+.logout-link::before {
+  background-image: url("/images/icon_logout.svg"); }
+
+.logout-link:hover::before {
+  background-image: url("/images/icon_logout_hover.svg"); }

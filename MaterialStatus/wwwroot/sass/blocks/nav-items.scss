@@ -1,0 +1,13 @@
+﻿.nav-items {
+    display: flex;
+    justify-content: space-around;
+    margin: 0 10px 0 10px;
+    width: 280px;
+}
+
+.nav-item {
+    height: 24px;
+    margin: 0;
+    border: 1px solid forestgreen;
+    font-size: 22px;
+}

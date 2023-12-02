@@ -1,0 +1,10 @@
+﻿.admin-area-link {
+
+    &::before {
+       background-image: url("/images/icon_admin.svg");
+    }
+
+    &:hover::before {
+        background-image: url("/images/icon_admin_hover.svg");
+    }
+}

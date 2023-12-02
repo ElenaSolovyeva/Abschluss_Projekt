@@ -2,5 +2,9 @@
   {
     "outputFile": "wwwroot/css/main.css",
     "inputFile": "wwwroot/sass/main.scss"
+  },
+  {
+    "outputFile": "wwwroot/sass/blocks/filter-button.css",
+    "inputFile": "wwwroot/sass/blocks/filter-button.scss"
   }
 ]

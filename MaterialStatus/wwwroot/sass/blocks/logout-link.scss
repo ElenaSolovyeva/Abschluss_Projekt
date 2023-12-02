@@ -1,0 +1,10 @@
+﻿.logout-link {
+
+    &::before {
+        background-image: url("/images/icon_logout.svg");
+    }
+
+    &:hover::before {
+        background-image: url("/images/icon_logout_hover.svg");
+    }
+}

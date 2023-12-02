@@ -1,16 +1,15 @@
 ﻿
 <header class="header">
     <nav class="main-nav">
-        <div class="main-nav-block main-nav-left-block">
-            <button class="button burger-button" aria-label="Menu">Burger</button>
+        <div class="main-nav-block main-nav-left-block">           
              @Html.Partial("ProjectLogoPartial")
              @Html.Partial("NavigationElementsPartial")
         </div>
-        <div class="main-nav-center-block">
-            <p class="user-name">John Snow</p>
+        <div class="main-nav-block main-nav-center-block">
+            <p class="nav-item user-name">John Snow</p>
         </div>
         <div class="main-nav-right-block">
-            <ul class="functional-nav">
+            <ul class="functional-nav main-nav-block">
                 <li class="functional-nav-item">
                     <a class="admin-area-link main-page-link" href="#">Adminbereich</a> <!--????????????????-->
                 </li>
@@ -20,9 +19,9 @@
                 <li class="functional-nav-item">
                     <a class="logout-link main-page-link">Ausloggen</a>
                 </li>
-                <li>
+                <!--li>
                     <button class="close-button reset-botton" aria-label="Schliessen">x</button>
-                </li>
+                </li-->
             </ul>
         </div>
     </nav>
