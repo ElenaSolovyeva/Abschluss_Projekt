@@ -321,6 +321,7 @@ html {
   box-sizing: inherit; }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
   min-width: 1920px;
@@ -407,6 +408,10 @@ ul {
     opacity: 1; }
 
 .burger-button {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
   width: 24px;
   height: 24px;
   background-size: 24px 24px;
@@ -465,9 +470,9 @@ ul {
   width: 280px; }
 
 .nav-item {
+  display: block;
   height: 24px;
   margin: 0;
-  border: 1px solid forestgreen;
   font-size: 22px; }
 
 .functional-nav {
@@ -589,3 +594,110 @@ ul {
 .rothenbacher-logo-image {
   height: 60px;
   width: auto; }
+
+.modal-window {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  z-index: 100;
+  left: 50%;
+  top: 50%;
+  width: 970px;
+  transform: translate(-50%, -50%);
+  background-color: #e5e5e5;
+  box-shadow: 0 0 2px rgba(59, 132, 242, 0.5); }
+
+.modal-close {
+  position: absolute;
+  content: " ";
+  top: 10px;
+  right: 10px;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  background-size: 30px 30px;
+  background-image: url("/images/icon_close_blau.svg"); }
+  .modal-close:hover {
+    opacity: 0.7; }
+  .modal-close:focus {
+    opacity: 0.4; }
+
+.modal-contact {
+  z-index: 99;
+  width: 360px;
+  height: 420px;
+  padding: 20px 20px 20px 40px;
+  border-right: 1px solid #d6d6d6; }
+
+.address-wrapper {
+  height: 100%;
+  font-family: 'Roboto', 'Arial', sans-serif;
+  font-size: 18px;
+  font-style: normal; }
+
+.contact-list {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: center;
+  height: 100%;
+  font-size: 18px; }
+
+.contact-item {
+  position: relative;
+  display: block;
+  width: 100%;
+  padding-left: 45px;
+  text-align: left; }
+
+.contact-link:hover {
+  opacity: 0.7; }
+
+.contact-link:active {
+  opacity: 0.4; }
+
+.contact-link::before {
+  display: block;
+  position: absolute;
+  content: " ";
+  top: 0px;
+  left: 20px;
+  width: 24px;
+  height: 24px;
+  border: none;
+  background-color: transparent;
+  background-size: 24px 24px; }
+
+.contact-header {
+  font-weight: bold; }
+
+.adress::before {
+  top: 4px;
+  left: 15px;
+  background-image: url("/images/icon_address_blau.svg"); }
+
+.phone::before {
+  background-image: url("/images/icon_phone_blau.svg"); }
+
+.fax::before {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  background-image: url("/images/icon_fax_blau.svg"); }
+
+.email::before {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  background-image: url("/images/icon_email_blau.svg"); }
+
+.web-address::before {
+  width: 20px;
+  height: 20px;
+  background-size: 20px 20px;
+  background-image: url("/images/icon_www_blau.svg"); }
+
+.modal-location {
+  width: 612px;
+  height: 420px; }

@@ -9,7 +9,7 @@
 </head>
 <body>
     @Html.Partial("HeaderMainPagePartial") <!-- HEADER  class="visually-hidden"-->
-    <main class="container">       
+    <main class="container">
         <section class="tables">
             <div><a name="top"></a></div>
             <!--foreach  todo-->
@@ -19,10 +19,18 @@
             <!--todo  viasually-hidden-->
             @Html.Partial("ModalFilterMainPartial")
         </aside>
+
+
     </main>
 
     @Html.Partial("FooterPartial") <!-- FOOTER -->
-    @Html.Partial("ModalContactPartial")
+
+<div class="modal-window">
+    @Html.Partial("ModalContactPartial")  <!-- MODAL WINDOW -->
     @Html.Partial("ModalLocationPartial")
+    <button class="reset-button modal-close" name="modal-close"></button>
+</div>
+    
+
 </body>
 </html>

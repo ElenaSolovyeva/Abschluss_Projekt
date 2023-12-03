@@ -1,17 +1,21 @@
 ﻿.burger-button {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto 0;
+
     width: 24px;
     height: 24px;
+    //margin-bottom: 10px;
     background-size: 24px 24px;
     background-image: url("/images/icon_burger.svg");
 
     &:hover {
         background-image: url("/images/icon_burger_hover.svg");
-        //box-shadow: 0 3px 0 $accent-color-1;
     }
 
     &:focus {
         background-image: url("/images/icon_burger_hover.svg");
-        //box-shadow: 0 3px 0 $accent-color-1;
         opacity: 1;
     }
 }

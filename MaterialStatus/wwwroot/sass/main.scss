@@ -23,6 +23,7 @@ html {
 }
 
 body {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-width: $hd-width;
@@ -38,6 +39,10 @@ main {
     box-sizing: border-box;
     padding: 70px 0 20px 0;
     border: 1px solid red; //zu loeschen
+}
+
+.container {
+    
 }
 
 footer {
@@ -65,7 +70,6 @@ ul {
     padding: 0;
     list-style-type: none;
 }
-
 
 .reset-button {
     margin: 0;
@@ -114,4 +118,5 @@ ul {
 @import "blocks/footer.scss";
 @import "blocks/emergency-service.scss";
 @import "blocks/rothenbacher-logo.scss";
-//
+//--Modal windows
+@import "blocks/modal.scss";
