@@ -42,6 +42,8 @@ main {
 }
 
 .container {
+    display: flex;
+    justify-content: space-between;
     
 }
 
@@ -101,7 +103,7 @@ ul {
 }
 
 //Imports
-//--Header
+//--Header (main page)
 @import "blocks/header.scss";
 @import "blocks/filter-button.scss";
 @import "blocks/burger-button.scss";
@@ -118,5 +120,8 @@ ul {
 @import "blocks/footer.scss";
 @import "blocks/emergency-service.scss";
 @import "blocks/rothenbacher-logo.scss";
-//--Modal windows
+//--Modal window
 @import "blocks/modal.scss";
+//--Filter (main page)
+@import "blocks/filter-main.scss";
+

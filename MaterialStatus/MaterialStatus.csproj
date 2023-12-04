@@ -13,7 +13,6 @@
     <Folder Include="Domains\" />
     <Folder Include="Models\ViewComponents\" />
     <Folder Include="wwwroot\css\" />
-    <Folder Include="wwwroot\js\" />
   </ItemGroup>
 
   <ItemGroup>

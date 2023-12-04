@@ -337,6 +337,10 @@ main {
   padding: 70px 0 20px 0;
   border: 1px solid red; }
 
+.container {
+  display: flex;
+  justify-content: space-between; }
+
 footer {
   flex-shrink: 0;
   border: 1px solid blue; }
@@ -597,7 +601,7 @@ ul {
 
 .modal-window {
   position: fixed;
-  display: flex;
+  display: none;
   justify-content: space-between;
   z-index: 100;
   left: 50%;
@@ -701,3 +705,12 @@ ul {
 .modal-location {
   width: 612px;
   height: 420px; }
+
+.filter-main {
+  position: relative;
+  top: 62px;
+  left: 0px;
+  flex-shrink: 0;
+  width: 180px;
+  height: 100%;
+  border: 1px solid orange; }
