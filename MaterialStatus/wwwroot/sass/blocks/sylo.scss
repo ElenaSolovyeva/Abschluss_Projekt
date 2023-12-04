@@ -1,0 +1,58 @@
+﻿.sylo {
+    display: flex;
+    justify-content: space-between;
+    padding: 8px;
+
+    border: 1px solid rgba(0,0,0,0.1);
+    border-radius: 2px;
+}
+
+.sylo-left-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid red; // zi loeschen
+}
+
+.sylo-header {
+    margin: 0;
+    font-size: 18px;
+    font-weight: bold;
+    border: 1px solid blue; // zi loeschen
+}
+
+.sylo-fullness {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 8px;
+    border: 1px solid blue; // zi loeschen
+}
+
+.sylo-fullness-color {
+    border-radius: 50%;
+
+}
+
+.sylo-fullness-value {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.sylo-image-wrapper {
+    margin-top: 8px;
+}
+
+.sylo-image {
+    display: block;
+    height: 100px;
+    width: auto;
+    margin: 0 auto;
+    border: 1px solid blau; // zi loeschen
+}
+
+//Right block
+.sylo-right-block{
+    margin-left: 10px;
+    height: auto;
+}

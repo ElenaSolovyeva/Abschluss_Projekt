@@ -1,0 +1,22 @@
+﻿.table-material {
+    height: auto;
+    border: 1px solid $border-color;
+    border-collapse: collapse;
+}
+
+.table-material-row {
+  height: 24px;
+}
+
+.table-material-header-item {
+    padding: 5px 3px;
+    border: 1px solid $border-color;
+    font-weight: bold;
+    text-align: center;
+    background-color: $background-third-color;
+}
+
+.table-material-item {
+    padding: 2px 3px;
+    border: 1px solid $border-color;
+}

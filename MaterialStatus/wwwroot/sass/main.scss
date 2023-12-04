@@ -11,6 +11,7 @@
 
 @import "blocks/normalize.scss";
 @import "blocks/variables.scss";
+@import "blocks/container.scss";
 
 html {
     box-sizing: border-box; // um die paddings und margins bei width: 100%; nicht aus dem Block fallen
@@ -34,22 +35,12 @@ body {
     font-family: 'Roboto', 'Arial', sans-serif;
 }
 
-main {
-    flex-grow: 1;
-    box-sizing: border-box;
-    padding: 70px 0 20px 0;
-    border: 1px solid red; //zu loeschen
-}
-
-.container {
-    display: flex;
-    justify-content: space-between;
-    
+main {    
+    box-sizing: border-box;    
 }
 
 footer {
     flex-shrink: 0;
-    border: 1px solid blue; //zu loeschen
 }
 
 a {
@@ -124,4 +115,8 @@ ul {
 @import "blocks/modal.scss";
 //--Filter (main page)
 @import "blocks/filter-main.scss";
-
+//--Table
+@import "blocks/table-material.scss";
+//--Contetnt (main-page)
+@import "blocks/contetnt-main-page.scss";
+@import "blocks/sylo.scss";

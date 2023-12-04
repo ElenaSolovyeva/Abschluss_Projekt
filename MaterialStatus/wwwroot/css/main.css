@@ -312,6 +312,11 @@ template {
 [hidden] {
   display: none; }
 
+.container {
+  flex-grow: 1;
+  display: flex;
+  padding: 80px 0 20px 20px; }
+
 html {
   box-sizing: border-box; }
 
@@ -332,18 +337,10 @@ body {
   font-family: 'Roboto', 'Arial', sans-serif; }
 
 main {
-  flex-grow: 1;
-  box-sizing: border-box;
-  padding: 70px 0 20px 0;
-  border: 1px solid red; }
-
-.container {
-  display: flex;
-  justify-content: space-between; }
+  box-sizing: border-box; }
 
 footer {
-  flex-shrink: 0;
-  border: 1px solid blue; }
+  flex-shrink: 0; }
 
 a {
   margin: 0;
@@ -565,13 +562,15 @@ ul {
 .footer {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 60px;
   padding-right: 15px;
   background-color: #e5e5e5; }
 
 .footer-item-wrapper {
-  padding: 5px; }
+  padding: 5px;
+  align-items: center; }
 
 .footer-link:hover {
   color: #ff6b00;
@@ -707,6 +706,7 @@ ul {
   height: 420px; }
 
 .filter-main {
+  display: none;
   position: relative;
   top: 62px;
   left: 0px;
@@ -714,3 +714,73 @@ ul {
   width: 180px;
   height: 100%;
   border: 1px solid orange; }
+
+.table-material {
+  height: auto;
+  border: 1px solid #aaaaaa;
+  border-collapse: collapse; }
+
+.table-material-row {
+  height: 24px; }
+
+.table-material-header-item {
+  padding: 5px 3px;
+  border: 1px solid #aaaaaa;
+  font-weight: bold;
+  text-align: center;
+  background-color: #c0c0c0; }
+
+.table-material-item {
+  padding: 2px 3px;
+  border: 1px solid #aaaaaa; }
+
+.contetnt-main-page.scss {
+  display: flex;
+  justify-content: center; }
+
+.sylo {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 2px; }
+
+.sylo-left-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid red; }
+
+.sylo-header {
+  margin: 0;
+  font-size: 18px;
+  font-weight: bold;
+  border: 1px solid blue; }
+
+.sylo-fullness {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 8px;
+  border: 1px solid blue; }
+
+.sylo-fullness-color {
+  border-radius: 50%; }
+
+.sylo-fullness-value {
+  font-weight: bold;
+  font-size: 16px; }
+
+.sylo-image-wrapper {
+  margin-top: 8px; }
+
+.sylo-image {
+  display: block;
+  height: 100px;
+  width: auto;
+  margin: 0 auto;
+  border: 1px solid blau; }
+
+.sylo-right-block {
+  margin-left: 10px;
+  height: auto; }
