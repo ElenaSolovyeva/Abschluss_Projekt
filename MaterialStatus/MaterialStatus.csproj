@@ -10,7 +10,6 @@
 
   <ItemGroup>
     <Folder Include="Areas\Admin\Controllers\" />
-    <Folder Include="Domains\" />
     <Folder Include="Models\ViewComponents\" />
     <Folder Include="wwwroot\css\" />
   </ItemGroup>

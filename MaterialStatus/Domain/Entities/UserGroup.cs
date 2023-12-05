@@ -1,11 +1,11 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MaterialStatus.Domains.Entities
+namespace MaterialStatus.Domain.Entities
 {
-    public class UsersGroup
+    public class UserGroup
     {
-        protected UsersGroup()
+        protected UserGroup()
         {
             DateAdded = DateTime.UtcNow;
         }

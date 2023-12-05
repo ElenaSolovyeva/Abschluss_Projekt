@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MaterialStatus.Domains.Entities
+namespace MaterialStatus.Domain.Entities
 {
     public class Department
     {

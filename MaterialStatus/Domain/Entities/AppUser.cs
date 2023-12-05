@@ -1,11 +1,11 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace MaterialStatus.Domains.Entities
+namespace MaterialStatus.Domain.Entities
 {
-    public abstract class User
+    public abstract class AppUser
     {
-        protected User() 
+        protected AppUser() 
         {
             DateAdded = DateTime.UtcNow;
         }
