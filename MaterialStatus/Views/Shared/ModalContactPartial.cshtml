@@ -1,30 +1,31 @@
-﻿<secion class="modal-contact">
+﻿@using MaterialStatus.Service
+<secion class="modal-contact">
     <h2 class="visually-hidden">Firmen-Kontakte von Rothenbacher GmbH</h2>    
     <ul class="contact-list">
         <li class="contact-item contact-header">
             Wir sind für Sie da
         </li>
         <li class="contact-item">
-            <a class="contact-link" href="http://www.rothenbacher-gmbh.de/" target="_blank">Rothenbacher GmbH</a>
+            <a class="contact-link" href=@Config.CompanyWebSite target="_blank">@Config.CompanyName</a>
         </li>               
         <li class="contact-item  ">
             <address class="address-wrapper">
-                <a class="contact-link adress" href="https://maps.google.com/maps?q=S.+Rothenbacher+GmbH" target="_blank">
-                    Zeppelinstraße 16, <br/>89160 Dornstadt                        ﻿
+                <a class="contact-link adress" href=@Config.CompanyGoogleMapLink target="_blank">
+                    @Config.CompanyStreet, <br /> @Config.CompanyCity                       ﻿
                 </a>
             </address>
         </li>
         <li class="contact-item">
-            <a class="contact-link phone" target="_blank" href="tel:+497348201208">(07348) 20-12-08</a>                
+            <a class="contact-link phone" target="_blank" href="tel:@Config.CompanyPhoneShort">@Config.CompanyPhone</a>                
         </li>
         <li class="contact-item">
-            <a class="contact-link fax" target="_blank" href="fax:+497348201382">(07348) 20-13-82</a>
+            <a class="contact-link fax" target="_blank" href="fax:@Config.CompanyFaxShort">@Config.CompanyFax</a>
         </li>
         <li class="contact-item">
-            <a class="contact-link email" href="mailto:info@rothenbacher-gmbh.de">info@rothenbacher-gmbh.de</a>
+            <a class="contact-link email" href="mailto:@Config.CompanyEmail">@Config.CompanyEmail</a>
         </li>
         <li class="contact-item">
-            <a class="contact-link web-address" href="http://www.rothenbacher-gmbh.de/" target="_blank">www.rothenbacher-gmbh.de</a>
+            <a class="contact-link web-address" href=@Config.CompanyWebSite target="_blank">@Config.CompanyWebSiteShort</a>
         </li>
     </ul>
 </secion>
