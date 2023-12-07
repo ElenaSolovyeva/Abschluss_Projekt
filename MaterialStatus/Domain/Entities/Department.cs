@@ -5,7 +5,7 @@ namespace MaterialStatus.Domain.Entities
 {
     public class Department
     {
-        protected Department()
+        public Department()
         {
             DateAdded = DateTime.UtcNow;
         }

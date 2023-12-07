@@ -1,4 +1,4 @@
-﻿'use strict';
+'use strict';
 
 const modalContact = document.getElementById('modal-contact');
 const btnOpenContact = document.getElementById('contact-open');

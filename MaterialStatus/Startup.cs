@@ -42,10 +42,7 @@ namespace MaterialStatus
             {
                 x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin"); });
             });
-
-
         }
-
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
