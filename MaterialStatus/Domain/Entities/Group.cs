@@ -5,7 +5,7 @@ namespace MaterialStatus.Domain.Entities
 {
     public class Group
     {
-        protected Group()
+        public Group()
         {
             DateAdded = DateTime.UtcNow;
         }

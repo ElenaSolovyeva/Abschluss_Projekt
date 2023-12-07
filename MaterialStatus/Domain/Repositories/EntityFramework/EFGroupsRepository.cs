@@ -34,7 +34,7 @@ namespace MaterialStatus.Domain.Repositories.EntityFramework
 
         public void DeleteGroup(Guid id)
         {
-            context.Groups.Remove(new Group() { Id = id });
+            context.Groups.Remove(new Group { Id = id });
         }
 
     }

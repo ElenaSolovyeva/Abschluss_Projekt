@@ -34,7 +34,7 @@ namespace MaterialStatus.Domain.Repositories.EntityFramework
 
         public void DeleteUser(Guid id)
         {
-            context.Users.Remove(new User() { Id = id });
+            context.Users.Remove(new User() { Id = id});
         }
     }
 }
