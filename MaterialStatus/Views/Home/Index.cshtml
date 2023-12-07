@@ -5,30 +5,30 @@
     <meta name="viewport" content="width=device-width" />
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon_material_status.ico">
-    <link type="text/css" rel="stylesheet" href="~/css/main.min.css" />
-    <script src="/js/modal-contact.js" async></script>
+    <link type="text/css" rel="stylesheet" href="~/css/main.min.css" asp-append-version="true"/>
+    <script src="/js/script.js" async asp-append-version="true"></script>
 </head>
 <body>
-    @Html.Partial("HeaderMainPagePartial") <!-- HEADER  class="visually-hidden"-->
+    @await Html.Partial("HeaderMainPagePartial") <!-- HEADER  class="visually-hidden"-->
 
     <main class="container">
         <aside class="filter-main">
             <!--todo  viasually-hidden-->
-            @Html.Partial("ModalFilterMainPartial")
+            @await Html.Partial("ModalFilterMainPartial")
         </aside>
         <section class="content-main-page">
             <!-- tables -->
             <div><a name="top"></a></div>
             <!--foreach  todo-->
-            @Html.Partial("SyloStatus")
+            @await Html.Partial("SyloStatus")
         </section>
     </main>
 
-    @Html.Partial("FooterPartial") <!-- FOOTER -->
+    @await Html.Partial("FooterPartial") <!-- FOOTER -->
 
     <div class="modal-window" id="modal-contact">
-        @Html.Partial("ModalContactPartial")  <!-- MODAL WINDOW -->
-        @Html.Partial("ModalLocationPartial")
+        @await Html.Partial("ModalContactPartial")  <!-- MODAL WINDOW -->
+        @await Html.Partial("ModalLocationPartial")
         <button class="reset-button modal-close" id="contact-close"></button>
     </div>   
 

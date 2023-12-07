@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "ufAPV1man7QvgWwpdYOoXUyMuhOxZhhcMcOMG44ELhLNk4igECkOC80dTUgAOVqS8KUjwxHKpQRptHYUQ/atZg==",
+  "dgSpecHash": "anNXreurR5b4M1gEXtJTjQ/573U6gtTQTSworaSU+WAsjUjJY2VFRHpZLdvoAFnIzjo3GIVQ1XtLRdOegqhjCQ==",
   "success": true,
   "projectFilePath": "C:\\Projects\\Abschluss_Projekt\\MaterialStatus\\MaterialStatus.csproj",
   "expectedPackageFiles": [
@@ -27,6 +27,7 @@
     "C:\\Users\\elena\\.nuget\\packages\\microsoft.entityframeworkcore.design\\3.1.32\\microsoft.entityframeworkcore.design.3.1.32.nupkg.sha512",
     "C:\\Users\\elena\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\3.1.32\\microsoft.entityframeworkcore.relational.3.1.32.nupkg.sha512",
     "C:\\Users\\elena\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\3.1.32\\microsoft.entityframeworkcore.sqlserver.3.1.32.nupkg.sha512",
+    "C:\\Users\\elena\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\3.1.32\\microsoft.entityframeworkcore.tools.3.1.32.nupkg.sha512",
     "C:\\Users\\elena\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\3.1.32\\microsoft.extensions.caching.abstractions.3.1.32.nupkg.sha512",
     "C:\\Users\\elena\\.nuget\\packages\\microsoft.extensions.caching.memory\\3.1.32\\microsoft.extensions.caching.memory.3.1.32.nupkg.sha512",
     "C:\\Users\\elena\\.nuget\\packages\\microsoft.extensions.configuration\\3.1.32\\microsoft.extensions.configuration.3.1.32.nupkg.sha512",
