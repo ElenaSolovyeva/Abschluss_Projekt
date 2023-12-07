@@ -4,6 +4,11 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Extensions.Configuration;
 using MaterialStatus.Service;
+using MaterialStatus.Domain;
+using MaterialStatus.Domain.Repositories.Abstract;
+using MaterialStatus.Domain.Repositories.EntityFramework;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Identity;
 
 namespace MaterialStatus
 {
@@ -11,22 +16,32 @@ namespace MaterialStatus
     {
         public IConfiguration Configuration { get; }
 
-        public Startup(IConfiguration configuration) { Configuration = configuration; }
+        public Startup(IConfiguration configuration) 
+        { 
+            Configuration = configuration; 
+        }
 
         public void ConfigureServices(IServiceCollection services)
         {            
             Configuration.Bind("Project", new Config());
             services.AddMvc();
 
-            //services.AddIdentity<IdentityUser, IdentityRole>(opts =>
-            //{
-            //    opts.User.RequireUniqueEmail = true;
-            //    opts.Password.RequiredLength = 6;
-            //    opts.Password.RequireNonAlphanumeric = false;
-            //    opts.Password.RequireLowercase = false;
-            //    opts.Password.RequireUppercase = false;
-            //    opts.Password.RequireDigit = false;
-            //}).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
+            services.AddTransient<IAppUsersRepository, EFAppUsersRepository>();
+            services.AddTransient<IGroupsRepository, EFGroupsRepository>(); 
+            services.AddTransient<IDepartmentsRepository, EFDepartmentsRepository>();
+            services.AddTransient<DataManager>();
+
+            services.AddDbContext<AppDbContext>(item => item.UseSqlServer(Config.ConnectionStringTest)); //! ConnectionString_B, ..G
+
+            services.AddIdentity<IdentityUser, IdentityRole>(opts =>
+            {
+                opts.User.RequireUniqueEmail = true;
+                opts.Password.RequiredLength = 2;
+                opts.Password.RequireNonAlphanumeric = false;
+                opts.Password.RequireLowercase = false;
+                opts.Password.RequireUppercase = false;
+                opts.Password.RequireDigit = false;
+            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
 
             //--
             services.ConfigureApplicationCookie(options =>
@@ -42,6 +57,8 @@ namespace MaterialStatus
             {
                 x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin"); });
             });
+
+
         }
         
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -51,9 +68,9 @@ namespace MaterialStatus
                 app.UseDeveloperExceptionPage();
             }
 
-            app.UseRouting();
-
             app.UseStaticFiles();
+
+            app.UseRouting();
 
             //--
             app.UseCookiePolicy();

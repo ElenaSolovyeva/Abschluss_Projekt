@@ -6,10 +6,9 @@ namespace MaterialStatus.Domain.Repositories.Abstract
 {
     public interface IGroupsRepository
     {
-        IQueryable<Group> GetUsers();
+        IQueryable<Group> GetGroups();
         Group GetGroupById(Guid id);
-       // Group GetGroupByName(string name);
-        void SaveGroup(Group user);
+        void SaveGroup(Group group);
         void DeleteGroup(Guid id);
     }
 }

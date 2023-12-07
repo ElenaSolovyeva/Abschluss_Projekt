@@ -6,24 +6,25 @@ using MaterialStatus.Domain.Repositories.Abstract;
 
 namespace MaterialStatus.Domain.Repositories.EntityFramework
 {
-    public class EFDepartmentsRepository
+    public class EFDepartmentsRepository : IDepartmentsRepository
     {
+    
         private readonly AppDbContext context;
         public EFDepartmentsRepository(AppDbContext context)
         {
             this.context = context;
         }
 
-        public IQueryable<Department> GetUsers()
+        public IQueryable<Department> GetDepartments()
         {
             return context.Departments;
         }
-        public Department GetUserById(Guid id)
+        public Department GetDepartmentById(Guid id)
         {
             return context.Departments.FirstOrDefault(department => department.Id == id);
         }
 
-        public void SaveDepartments(Department department)
+        public void SaveDepartment(Department department)
         {
             if (department.Id == default)
                 context.Entry(department).State = EntityState.Added;

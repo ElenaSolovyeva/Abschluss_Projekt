@@ -8,9 +8,10 @@ namespace MaterialStatus.Service
 {
     public class Config
     {
-        public static string Version { get; set; } 
-        public static string ConnectionString_B { get; set; }
-        public static string ConnectionString_G { get; set; }
+        public static string Version { get; set; }
+        public static string ConnectionStringTest { get; set; }
+        public static string ConnectionStringSWB { get; set; }
+        public static string ConnectionStringSWG { get; set; }
         public static string CompanyName { get; set; }
         public static string CompanyPhone { get; set; }
         public static string CompanyPhoneShort { get; set; }

@@ -14,21 +14,21 @@
     <main class="container">
         <aside class="filter-main">
             <!--todo  viasually-hidden-->
-            @await Html.Partial("ModalFilterMainPartial")
+            @Html.Partial("ModalFilterMainPartial")
         </aside>
         <section class="content-main-page">
             <!-- tables -->
             <div><a name="top"></a></div>
             <!--foreach  todo-->
-            @await Html.Partial("SyloStatus")
+            @Html.Partial("SyloStatus")
         </section>
     </main>
 
-    @await Html.Partial("FooterPartial") <!-- FOOTER -->
+    @Html.Partial("FooterPartial") <!-- FOOTER -->
 
     <div class="modal-window" id="modal-contact">
-        @await Html.Partial("ModalContactPartial")  <!-- MODAL WINDOW -->
-        @await Html.Partial("ModalLocationPartial")
+        @Html.Partial("ModalContactPartial")  <!-- MODAL WINDOW -->
+        @Html.Partial("ModalLocationPartial")
         <button class="reset-button modal-close" id="contact-close"></button>
     </div>   
 

@@ -6,7 +6,7 @@ using MaterialStatus.Domain.Repositories.Abstract;
 
 namespace MaterialStatus.Domain.Repositories.EntityFramework
 {
-    public class EFGroupsRepository
+    public class EFGroupsRepository : IGroupsRepository
     {
         private readonly AppDbContext context;
         public EFGroupsRepository(AppDbContext context)
@@ -18,12 +18,12 @@ namespace MaterialStatus.Domain.Repositories.EntityFramework
         {
             return context.Groups;
         }
-        public Group GetUserById(Guid id)
+        public Group GetGroupById(Guid id)
         {
             return context.Groups.FirstOrDefault(group => group.Id == id);
         }
 
-        public void SaveUser(Group group)
+        public void SaveGroup(Group group)
         {
             if (group.Id == default)
                 context.Entry(group).State = EntityState.Added;

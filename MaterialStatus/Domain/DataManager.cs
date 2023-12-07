@@ -9,13 +9,13 @@ namespace MaterialStatus.Domain
 {
     public class DataManager
     {
-        public IUsersRepository Users { get; set; }
+        public IAppUsersRepository AppUsers { get; set; }
         public IGroupsRepository Groups { get; set; }
         public IDepartmentsRepository Departments { get; set; }
 
-        public DataManager(IUsersRepository usersRepository, IGroupsRepository groupsRepository, IDepartmentsRepository departmentsRepository)
+        public DataManager(IAppUsersRepository usersRepository, IGroupsRepository groupsRepository, IDepartmentsRepository departmentsRepository)
         {
-            Users = usersRepository;
+            AppUsers = usersRepository;
             Groups = groupsRepository;
             Departments = departmentsRepository;
         }
