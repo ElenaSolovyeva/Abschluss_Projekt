@@ -358,8 +358,6 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.A
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Razor.Language.dll
-C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
@@ -373,9 +371,6 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.E
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.EntityFrameworkCore.SqlServer.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Abstractions.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Caching.Memory.dll
-C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
-C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
-C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.DependencyInjection.Abstractions.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Identity.Core.dll
@@ -511,3 +506,8 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\appsettings.production.json
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\appsettings.staging.json
+C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
+C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
+C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
+C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll

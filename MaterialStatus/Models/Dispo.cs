@@ -8,6 +8,7 @@ namespace MaterialStatus.Models
 {
     public class Dispo
     {
+        public int Id { get; set; }
         public string Auftragsnummer { get; set; }
         public string Material_Bez { get; set; }
         public double chargenanzahl_soll { get; set; }
@@ -18,6 +19,8 @@ namespace MaterialStatus.Models
         public long status { get; set; }
         public int Chargenzahl { get; set; }
         public int FarbId { get; set; }
+
+        public Dispo() { }
 
         public Dispo(string auftragsnr, string Material, double Charge_soll, double Charge_ist, double Auftrag_soll, double Auftrag_Ist, long Line_ID, long Status)
         {

@@ -1,14 +1,15 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using Microsoft.Extensions.Configuration;
-using MaterialStatus.Service;
-using MaterialStatus.Domain;
-using MaterialStatus.Domain.Repositories.Abstract;
-using MaterialStatus.Domain.Repositories.EntityFramework;
-using Microsoft.EntityFrameworkCore;
+using MaterialStatus.Models;
+
 using Microsoft.AspNetCore.Identity;
+using MaterialStatus.Service;
 
 namespace MaterialStatus
 {
@@ -24,25 +25,11 @@ namespace MaterialStatus
         public void ConfigureServices(IServiceCollection services)
         {            
             Configuration.Bind("Project", new Config());
-            services.AddMvc();
-
-            services.AddTransient<IAppUsersRepository, EFAppUsersRepository>();
-            services.AddTransient<IGroupsRepository, EFGroupsRepository>(); 
-            services.AddTransient<IDepartmentsRepository, EFDepartmentsRepository>();
-            services.AddTransient<DataManager>();
+            //services.AddMvc();
 
             services.AddDbContext<AppDbContext>(item => item.UseSqlServer(Config.ConnectionStringTest)); //! ConnectionString_B, ..G
 
-            services.AddIdentity<IdentityUser, IdentityRole>(opts =>
-            {
-                opts.User.RequireUniqueEmail = true;
-                opts.Password.RequiredLength = 2;
-                opts.Password.RequireNonAlphanumeric = false;
-                opts.Password.RequireLowercase = false;
-                opts.Password.RequireUppercase = false;
-                opts.Password.RequireDigit = false;
-            }).AddEntityFrameworkStores<AppDbContext>().AddDefaultTokenProviders();
-
+           
             //--
             services.ConfigureApplicationCookie(options =>
             {
@@ -58,6 +45,9 @@ namespace MaterialStatus
                 x.AddPolicy("AdminArea", policy => { policy.RequireRole("admin"); });
             });
 
+            services.AddControllersWithViews()
+                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
+                
 
         }
         

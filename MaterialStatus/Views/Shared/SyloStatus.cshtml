@@ -1,15 +1,18 @@
-﻿<article class="sylo">
+﻿@using MaterialStatus.Models
+
+
+<article class="sylo">
     <div class="sylo-left-block">
         <h2 class="sylo-header">Sylo <span class="sylo-number">(10)</span></h2>
         <div class="sylo-fullness">
-            <img class="sylo-fullness-color" src="/images/icon_status_green.png" 
-                 alt="Farbige abbildung von der Sylo-Befüllung"/>
+            <img class="sylo-fullness-color" src="/images/icon_status_green.png"
+                 alt="Farbige abbildung von der Sylo-Befüllung" />
             <p class="sylo-fullness-value"><span>(78)</span>%</p>
         </div>
         <div class="sylo-image-wrapper">
-            <img class="sylo-image" src="/images/img_silo.png" 
-                 alt="Sylo icon"/>
-        </div>        
+            <img class="sylo-image" src="/images/img_silo.png"
+                 alt="Sylo icon" />
+        </div>
     </div>
     <div class="sylo-right-block">
         <table class="table-material">
@@ -22,23 +25,19 @@
                 <th class="table-material-header-item">Ist Sackzahl</th>
             </tr>
             <!-- foreach -->
+            @foreach (var item in ViewData["Data"] as List<Dispo>)
+            {
+
             <tr class="table-material-row">
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
+               <td class="table-material-item">@item.Auftragsnummer</td>
+                <td class="table-material-item">@item.Auftragsnummer</td>
+                <td class="table-material-item">@item.Auftragsnummer</td>
+                <td class="table-material-item">@item.Auftragsnummer</td>
+                <td class="table-material-item">@item.Auftragsnummer</td>
+                <td class="table-material-item">@item.Auftragsnummer</td>
             </tr>
-            <tr class="table-material-row">
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
-                <td class="table-material-item">Test</td>
-            </tr>
+            }
         </table>
     </div>
-   
+
 </article>
