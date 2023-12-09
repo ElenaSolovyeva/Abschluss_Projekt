@@ -5,14 +5,16 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MaterialStatus.Models
 {
-    public class AppDbContext : IdentityDbContext<IdentityUser>    
+    public class AppDbContext : DbContext//IdentityDbContext<IdentityUser>    
     {
-        public AppDbContext(DbContextOptions<AppDbContext> options) : base(options) 
+        public DbSet<DispoB> DisposB { get; set; }
+        public DbSet<DispoG> DisposG { get; set; }
+
+        public AppDbContext(DbContextOptions<AppDbContext> options) 
+            : base(options) 
         {
             Database.EnsureCreated(); // without migration
-        }
+        }       
 
-        public DbSet<Dispo> Dispos { get; set; }
-        
     }
 }
