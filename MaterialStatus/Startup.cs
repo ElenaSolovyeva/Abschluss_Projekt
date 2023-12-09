@@ -70,6 +70,8 @@ namespace MaterialStatus
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute("default", "{controller=Home}/{action=Index}/{Id?}");
+                endpoints.MapControllerRoute("main", "{controller=MainPage}/{action=MainPage}/{Id?}");
+                endpoints.MapControllerRoute("admin", "{controller=AdminArea}/{action=AdminArea}/{Id?}");
             });
         }
     }

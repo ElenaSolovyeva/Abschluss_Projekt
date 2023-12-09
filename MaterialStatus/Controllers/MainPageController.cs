@@ -4,20 +4,21 @@ using System.Linq;
 
 namespace MaterialStatus.Controllers
 {
-    public class HomeController : Controller        
+    public class MainPageController : Controller
     {
         private readonly AppDbContext context;
-        public HomeController(AppDbContext context) 
+        public MainPageController(AppDbContext context)
         {
-            this.context = context;            
+            this.context = context;
         }
-        public IActionResult Index()
+        public IActionResult MainPage()
         {
             ViewData["DataB"] = context.DisposB.ToList();
             ViewData["DataG"] = context.DisposG.ToList();
-    
+
             return View();
         }
     }
-}
 
+    
+}

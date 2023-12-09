@@ -482,7 +482,6 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialSta
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.TagHelpers.output.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.RazorCoreGenerate.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\Index.cshtml.g.cs
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\MainPage.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.RazorTargetAssemblyInfo.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.RazorTargetAssemblyInfo.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.Views.pdb
@@ -499,7 +498,6 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ModalContactPartial.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ModalLocationPartial.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ModalFilterMainPartial.cshtml.g.cs
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Home\AdminArea.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NavigationAdminPartial.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\SyloStatus.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
@@ -509,3 +507,5 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.B
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Abstractions.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Configuration.Binder.dll
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\MainPage.cshtml.g.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\AdminArea.cshtml.g.cs
