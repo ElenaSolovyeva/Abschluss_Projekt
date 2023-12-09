@@ -1,0 +1,3 @@
+CREATE TABLE [dbo].[tbl_protokoll_position] ([id] [bigint] NOT NULL IDENTITY(15056291,1) ,[rz_id] [bigint],[e_id] [bigint],[m_id] [bigint],[SPS] [bigint],[Sollwert] [float],[Funktion] [varchar](10),[reihenfolge] [bigint] NOT NULL,[rz_version] [bigint],[auf_id] [bigint] NOT NULL,[Istwert] [float],[Artikelnummer] [varchar](50) NOT NULL,[artikelname] [varchar](50),[TolP] [varchar](50) NOT NULL,[TolM] [varchar](50) NOT NULL,[Nachlauf] [varchar](50) NOT NULL,[Fein] [varchar](50) NOT NULL,[Lager] [varchar](50) NOT NULL,[Auftrag] [varchar](50) NOT NULL,[Fabrikat] [varchar](50) NOT NULL,[Charge] [bigint] NOT NULL,[equipname] [varchar](50) NOT NULL,[staus] [bigint],[datetime] [datetime],[sdatetime] [datetime])
+
+go

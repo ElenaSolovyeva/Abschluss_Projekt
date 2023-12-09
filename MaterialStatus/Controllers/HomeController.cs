@@ -15,7 +15,7 @@ namespace MaterialStatus.Controllers
         public IActionResult Index()
         {
             ViewData["Data"] = context.Dispos.ToList();
-            Dispo item = new Dispo();
+            //Dispo item = new Dispo();
             return View();
         }
     }

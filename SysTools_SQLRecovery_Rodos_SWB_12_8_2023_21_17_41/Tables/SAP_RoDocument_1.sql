@@ -1,0 +1,2 @@
+SET IDENTITY_INSERT [dbo].[SAP_RoDocument] ON Insert into [dbo].[SAP_RoDocument] ([id],[Description],[Value]) SELECT 1,CONVERT(varchar(50),0x49446f634e756d626572) COLLATE DATABASE_DEFAULT,50354
+ SET IDENTITY_INSERT [dbo].[SAP_RoDocument] OFF ;

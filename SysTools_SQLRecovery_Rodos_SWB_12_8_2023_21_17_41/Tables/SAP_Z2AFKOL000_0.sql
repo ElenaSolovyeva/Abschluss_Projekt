@@ -1,0 +1,3 @@
+CREATE TABLE [dbo].[SAP_Z2AFKOL000] ([id] [int] NOT NULL IDENTITY(1,1) ,[TABNAM] [varchar](10),[Dummy1] [varchar](20),[MANDT] [varchar](3),[DOCNUM] [varchar](16),[Dummy2] [varchar](14),[AUFNR] [varchar](12),[WERKS] [varchar](4),[MATNR] [varchar](18),[MAKTX] [varchar](40),[VERID] [varchar](4),[GAMNG] [varchar](15),[GMEIN] [varchar](3),[BRWEG] [varchar](15),[GEWEI] [varchar](3),[GLTRP] [varchar](8),[GSTRP] [varchar](8),[GLTRS] [varchar](8),[GSTRS] [varchar](8),[GLTRSTime] [varchar](6),[GSTRSTime] [varchar](6),[KDAUF] [varchar](10),[KDPOS] [varchar](6),[ZZFARBNR] [varchar](8),[LOEKZ] [varchar](1),[LTXA1] [varchar](40),[FERTHIN] [varchar](80),[RoState] [bigint] NOT NULL,[APRIO] [varchar](1))
+
+go
