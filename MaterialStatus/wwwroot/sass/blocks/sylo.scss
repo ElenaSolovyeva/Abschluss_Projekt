@@ -1,6 +1,8 @@
 ﻿.sylo {
     display: flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 20px;
     padding: 8px;
 
     border: 1px solid rgba(0,0,0,0.1);
@@ -10,29 +12,25 @@
 .sylo-left-block {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    border: 1px solid red; // zi loeschen
+    justify-content: start;
+    flex-grow: 1;
+    align-items: center;
+    padding: 0 10px;
 }
 
 .sylo-header {
     margin: 0;
-    font-size: 18px;
+    font-size: 20px;
     font-weight: bold;
-    border: 1px solid blue; // zi loeschen
 }
 
 .sylo-fullness {
     display: flex;
-    justify-content: space-around;
+    justify-content: start;
     align-items: center;
     margin-top: 8px;
-    border: 1px solid blue; // zi loeschen
 }
 
-.sylo-fullness-color {
-    border-radius: 50%;
-
-}
 
 .sylo-fullness-value {
     font-weight: bold;
@@ -40,12 +38,12 @@
 }
 
 .sylo-image-wrapper {
-    margin-top: 8px;
+    margin-top: 15px;
 }
 
 .sylo-image {
     display: block;
-    height: 100px;
+    height: 150px;
     width: auto;
     margin: 0 auto;
     border: 1px solid blau; // zi loeschen
@@ -56,3 +54,16 @@
     margin-left: 10px;
     height: auto;
 }
+
+// Id's
+/*#Sylo-B-1 {
+    display: flex;
+}
+
+#Sylo-B-3 {
+    display: flex;
+}
+
+#Sylo-G-2 {
+    display: flex;
+}*/

@@ -2,7 +2,7 @@
 @using MaterialStatus.Service
 @using System
 
-<article class="sylo"> <!--Halle B, Line 1 -->
+<article class="sylo sylo-halle-b"> <!--Halle B, Line 1 -->
     <div class="sylo-left-block">
         <h2 class="sylo-header">Sylo <span class="sylo-number">@Config.HalleB_Linie1_SyloNr</span></h2>
         <div class="sylo-image-wrapper">
@@ -16,34 +16,41 @@
                 <th class="table-material-header-item">Material</th>
                 <th class="table-material-header-item">Soll C.</th>
                 <th class="table-material-header-item">Ist C.</th>
-                <th class="table-material-header-item">Soll Kg</th>
-                <th class="table-material-header-item">Ist Kg </th>
+                <th class="table-material-header-item">Soll, Kg</th>
+                <th class="table-material-header-item">Ist, Kg </th>
                 <th class="table-material-header-item">AuftragsNr</th>
                 <th class="table-material-header-item">LineId</th>
-                <th class="table-material-header-item">Anfangsdatum</th>
+                <th class="table-material-header-item">AnfangsDatum</th>
+                <th class="table-material-header-item">EndDatum</th>
+                <th class="table-material-header-item">RezeptNr</th>
+                <th class="table-material-header-item">RezeptVersion</th>
+
             </tr>
             <!-- foreach -->
             @foreach (var item in ViewData["DataB"] as List<DispoB>)
             {
                 if (item.Line_id == Config.HalleB_Linie1_id & item.Start_time >= new DateTime(2023, 12,01))
                 {
-                    <tr class="table-material-row">
-                        <td class="table-material-item">@item.Material_Bez</td>
-                        <td class="table-material-item">@item.Chargenanzahl_soll</td>
-                        <td class="table-material-item">@item.Chargenanzahl_ist</td>
-                        <td class="table-material-item">@Math.Round(item.Auftrags_gewicht, 2)</td>
-                        <td class="table-material-item">@Math.Round(item.Auftrags_gewicht_ist, 2)</td>
-                        <td class="table-material-item">@item.Auftragsnr</td>
-                        <td class="table-material-item">@item.Line_id</td>
-                        <td class="table-material-item">@item.Start_time</td>
-                    </tr>
+                <tr class="table-material-row">
+                    <td class="table-material-item">@item.Material_Bez</td>
+                    <td class="table-material-item">@item.Chargenanzahl_soll</td>
+                    <td class="table-material-item">@item.Chargenanzahl_ist</td>
+                    <td class="table-material-item">@Math.Round(item.Auftrags_gewicht, 2)</td>
+                    <td class="table-material-item">@Math.Round(item.Auftrags_gewicht_ist, 2)</td>
+                    <td class="table-material-item">@item.Auftragsnr</td>
+                    <td class="table-material-item">@item.Line_id</td>
+                    <td class="table-material-item">@item.Start_time</td>
+                    <td class="table-material-item">@item.End_time</td>
+                    <td class="table-material-item">@item.Rezept_id</td>
+                    <td class="table-material-item">@item.Rezept_version_id</td>
+                </tr>
                 }
             }
         </table>
     </div>
 </article>
 
-<article class="sylo"> <!--Halle B, Line 3 -->
+<article class="sylo sylo-halle-b"> <!--Halle B, Line 3 -->
     <div class="sylo-left-block">
         <h2 class="sylo-header">Sylo <span class="sylo-number">@Config.HalleB_Linie3_SyloNr</span></h2>
         <div class="sylo-image-wrapper">
@@ -57,33 +64,43 @@
                 <th class="table-material-header-item">Material</th>
                 <th class="table-material-header-item">Soll C.</th>
                 <th class="table-material-header-item">Ist C.</th>
-                <th class="table-material-header-item">Soll Kg</th>
-                <th class="table-material-header-item">Ist Kg </th>
+                <th class="table-material-header-item">Soll, Kg</th>
+                <th class="table-material-header-item">Ist, Kg </th>
                 <th class="table-material-header-item">AuftragsNr</th>
                 <th class="table-material-header-item">LineId</th>
+                <th class="table-material-header-item">AnfangsDatum</th>
+                <th class="table-material-header-item">EndDatum</th>
+                <th class="table-material-header-item">RezeptNr</th>
+                <th class="table-material-header-item">RezeptVersion</th>
+
             </tr>
             
             @foreach (var item in ViewData["DataB"] as List<DispoB>)
             {
                 if (item.Line_id == Config.HalleB_Linie3_id & item.Start_time >= new DateTime(2023, 12, 01))
                 {
-                    <tr class="table-material-row">
-                        <td class="table-material-item">@item.Material_Bez</td>
-                        <td class="table-material-item">@item.Chargenanzahl_soll</td>
-                        <td class="table-material-item">@item.Chargenanzahl_ist</td>
-                        <td class="table-material-item">@Math.Round(item.Auftrags_gewicht, 2)</td>
-                        <td class="table-material-item">@Math.Round(item.Auftrags_gewicht_ist, 2)</td>
-                        <td class="table-material-item">@item.Auftragsnr</td>
-                        <td class="table-material-item">@item.Line_id</td>
-                    </tr>
+                <tr class="table-material-row">
+                    <td class="table-material-item">@item.Material_Bez</td>
+                    <td class="table-material-item">@item.Chargenanzahl_soll</td>
+                    <td class="table-material-item">@item.Chargenanzahl_ist</td>
+                    <td class="table-material-item">@Math.Round(item.Auftrags_gewicht, 2)</td>
+                    <td class="table-material-item">@Math.Round(item.Auftrags_gewicht_ist, 2)</td>
+                    <td class="table-material-item">@item.Auftragsnr</td>
+                    <td class="table-material-item">@item.Line_id</td>
+                    <td class="table-material-item">@item.Start_time</td>
+                    <td class="table-material-item">@item.End_time</td>
+                    <td class="table-material-item">@item.Rezept_id</td>
+                    <td class="table-material-item">@item.Rezept_version_id</td>
+
+                </tr>
                 }
             }
         </table>
     </div>
 </article>
 
-<article class="sylo">
-    <!--Halle G -->
+<article class="sylo sylo-halle-g"> <!--Halle G, Linie 2-->
+
     <div class="sylo-left-block">
         <h2 class="sylo-header">Sylo <span class="sylo-number">@Config.HalleG_SyloNr</span></h2>
         <div class="sylo-image-wrapper">
@@ -97,10 +114,14 @@
                 <th class="table-material-header-item">Material</th>
                 <th class="table-material-header-item">Soll C.</th>
                 <th class="table-material-header-item">Ist C.</th>
-                <th class="table-material-header-item">Soll Kg</th>
-                <th class="table-material-header-item">Ist Kg </th>
+                <th class="table-material-header-item">Soll, Kg</th>
+                <th class="table-material-header-item">Ist, Kg </th>
                 <th class="table-material-header-item">AuftragsNr</th>
                 <th class="table-material-header-item">LineId</th>
+                <th class="table-material-header-item">AnfangsDatum</th>
+                <th class="table-material-header-item">EndDatum</th>
+                <th class="table-material-header-item">RezeptNr</th>
+                <th class="table-material-header-item">RezeptVersion</th>
             </tr>
 
             @foreach (var item in ViewData["DataG"] as List<DispoG>)
@@ -116,6 +137,10 @@
                         <td class="table-material-item">@Math.Round(item.Auftrags_gewicht_ist, 2)</td>
                         <td class="table-material-item">@item.Auftragsnr</td>
                         <td class="table-material-item">@item.Line_id</td>
+                        <td class="table-material-item">@item.Start_time</td>
+                        <td class="table-material-item">@item.End_time</td>
+                        <td class="table-material-item">@item.Rezept_id</td>
+                        <td class="table-material-item">@item.Rezept_version_id</td>
                     </tr>
                 }
             }

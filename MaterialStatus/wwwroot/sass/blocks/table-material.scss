@@ -19,4 +19,8 @@
 .table-material-item {
     padding: 2px 3px;
     border: 1px solid $border-color;
+
+    &:nth-child(n+2) {
+        text-align: right;
+    }
 }

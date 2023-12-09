@@ -113,10 +113,12 @@ ul {
 @import "blocks/rothenbacher-logo.scss";
 //--Modal window
 @import "blocks/modal.scss";
-//--Filter (main page)
-@import "blocks/filter-main.scss";
 //--Table
 @import "blocks/table-material.scss";
 //--Contetnt (main-page)
 @import "blocks/contetnt-main-page.scss";
 @import "blocks/sylo.scss";
+//--Filter (main-page)
+@import "blocks/filter.scss";
+@import "blocks/filter-button.scss";
+
