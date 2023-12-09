@@ -10,13 +10,15 @@ namespace MaterialStatus.Controllers
         private readonly AppDbContext context;
         public HomeController(AppDbContext context) 
         {
-            this.context = context;
+            this.context = context;            
         }
         public IActionResult Index()
         {
             ViewData["DataB"] = context.DisposB.ToList();
             ViewData["DataG"] = context.DisposG.ToList();
             //DispoB item = new DispoB();
+
+            
             return View();
         }
     }
