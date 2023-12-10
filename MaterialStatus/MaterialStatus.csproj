@@ -5,12 +5,18 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="Models\ViewComponents\**" />
+    <Content Remove="Models\ViewComponents\**" />
+    <EmbeddedResource Remove="Models\ViewComponents\**" />
+    <None Remove="Models\ViewComponents\**" />
+  </ItemGroup>
+
+  <ItemGroup>
     <Content Remove="bundleconfig.json" />
     <Content Remove="compilerconfig.json" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Models\ViewComponents\" />
     <Folder Include="wwwroot\css\" />
   </ItemGroup>
 

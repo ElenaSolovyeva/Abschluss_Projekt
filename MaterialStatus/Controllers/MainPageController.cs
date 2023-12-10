@@ -7,10 +7,7 @@ namespace MaterialStatus.Controllers
     public class MainPageController : Controller
     {
         private readonly AppDbContext context;
-        public MainPageController(AppDbContext context)
-        {
-            this.context = context;
-        }
+        public MainPageController(AppDbContext context) { this.context = context; }
         public IActionResult MainPage()
         {
             ViewData["DataB"] = context.DisposB.ToList();

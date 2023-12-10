@@ -5,7 +5,7 @@ using Microsoft.EntityFrameworkCore;
 
 namespace MaterialStatus.Models
 {
-    public class AppDbContext : DbContext//IdentityDbContext<IdentityUser>    
+    public class AppDbContext : DbContext
     {
         public DbSet<DispoB> DisposB { get; set; }
         public DbSet<DispoG> DisposG { get; set; }
