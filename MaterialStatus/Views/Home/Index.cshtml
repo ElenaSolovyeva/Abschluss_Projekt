@@ -7,20 +7,16 @@
     <title>Login</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon_material_status.ico">
     <link type="text/css" rel="stylesheet" href="~/css/main.min.css" asp-append-version="true"/>
-    <script src="/js/script.min.js" async asp-append-version="true"></script>
+    
 </head>
 <body>
-    @Html.Partial("HeaderMainPagePartial")
+    @Html.Partial("HeaderLoginPartial")
 
-    <main class="container">
-        <aside class="filter-main">
-            <!--todo  visually-hidden-->
-            @Html.Partial("ModalFilterMainPartial")
-        </aside>
-        <section class="content-main-page">
-            <div><a name="top"></a></div>
-            @Html.Partial("SyloStatus") <!-- tables -->
-        </section>
+    <main class="container container-login">
+        <p class="tmp">Diese Seite befindet sich im Development-Modus</p>
+        <p class="tmp">Login und navigation ohne Passwort</p>
+        <a class="tmp-link" href="MainPage">to main page ></a>
+        <a class="tmp-link" href="AdminArea">to admin area ></a>
     </main>
 
     @Html.Partial("FooterPartial") 

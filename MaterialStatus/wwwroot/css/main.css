@@ -318,6 +318,10 @@ template {
   justify-content: center;
   padding: 80px 0 20px 20px; }
 
+.container-login {
+  flex-direction: column;
+  align-items: center; }
+
 html {
   box-sizing: border-box; }
 
@@ -484,6 +488,10 @@ ul {
   height: 24px;
   margin: 0;
   font-size: 22px; }
+
+.nav-login {
+  display: flex;
+  justify-content: center; }
 
 .functional-nav {
   display: flex;
@@ -819,3 +827,17 @@ ul {
   .filter-button:focus {
     box-shadow: 0 3px 0 #ff6b00;
     opacity: 1; }
+
+.tmp {
+  font-size: 30px;
+  color: red;
+  padding: 20px; }
+
+.tmp-link {
+  margin-top: 50px;
+  font-size: 24px; }
+  .tmp-link:hover {
+    box-shadow: 0 3px blue;
+    opacity: 0.8; }
+  .tmp-link:active {
+    opacity: 0.5; }
