@@ -500,7 +500,6 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ModalFilterMainPartial.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NavigationAdminPartial.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\SyloStatus.cshtml.g.cs
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_Layout.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\_ViewImports.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Bcl.AsyncInterfaces.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.Bcl.HashCode.dll
