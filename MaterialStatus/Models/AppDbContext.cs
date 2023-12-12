@@ -7,8 +7,8 @@ namespace MaterialStatus.Models
 {
     public class AppDbContext : DbContext
     {
-        public DbSet<DispoB> DisposB { get; set; }
-        public DbSet<DispoG> DisposG { get; set; }
+        public DbSet<tbl_dispo> tbl_dispo { get; set; }
+        //public DbSet<DispoG> DisposG { get; set; }
 
         public AppDbContext(DbContextOptions<AppDbContext> options) 
             : base(options) 

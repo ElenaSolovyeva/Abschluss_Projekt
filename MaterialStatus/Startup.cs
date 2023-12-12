@@ -27,7 +27,7 @@ namespace MaterialStatus
             Configuration.Bind("Project", new Config());
             //services.AddMvc();
 
-            services.AddDbContext<AppDbContext>(item => item.UseSqlServer(Config.ConnectionStringTest)); //! ConnectionString_B, ..G
+            services.AddDbContext<AppDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWBv2)); //! ConnectionString_B, ..G
 
            
             //--

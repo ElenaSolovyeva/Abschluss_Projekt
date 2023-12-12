@@ -10,8 +10,8 @@ namespace MaterialStatus.Controllers
         public MainPageController(AppDbContext context) { this.context = context; }
         public IActionResult MainPage()
         {
-            ViewData["DataB"] = context.DisposB.ToList();
-            ViewData["DataG"] = context.DisposG.ToList();
+            ViewData["DataB"] = context.tbl_dispo.ToList();
+            //ViewData["DataG"] = context.DisposG.ToList();
 
             return View();
         }

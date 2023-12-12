@@ -13,8 +13,8 @@ namespace MaterialStatus.Controllers
         }
         public IActionResult Index()
         {
-            ViewData["DataB"] = context.DisposB.ToList();
-            ViewData["DataG"] = context.DisposG.ToList();
+            ViewData["DataB"] = context.tbl_dispo.ToList();
+           // ViewData["DataG"] = context.DisposG.ToList();
     
             return View();
         }
