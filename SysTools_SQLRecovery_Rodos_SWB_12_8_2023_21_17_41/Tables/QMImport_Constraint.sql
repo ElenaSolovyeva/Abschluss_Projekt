@@ -1,4 +1,0 @@
-ALTER TABLE [dbo].[QMImport] ALTER COLUMN [Id] bigint NOT NULL
-go
-ALTER TABLE [dbo].[QMImport] ADD CONSTRAINT [PK_QMImport] PRIMARY KEY CLUSTERED (,[Id])
-go

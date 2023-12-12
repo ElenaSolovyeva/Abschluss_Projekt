@@ -1,5 +1,0 @@
-SET IDENTITY_INSERT [dbo].[tbl_technologiclasse] ON Insert into [dbo].[tbl_technologiclasse] ([id],[technologiclasse]) SELECT 1,CONVERT(varchar(50),0x446f7369657273797374656d2067726176696d65747269736368) COLLATE DATABASE_DEFAULT
- SET IDENTITY_INSERT [dbo].[tbl_technologiclasse] OFF ;SET IDENTITY_INSERT [dbo].[tbl_technologiclasse] ON Insert into [dbo].[tbl_technologiclasse] ([id],[technologiclasse]) SELECT 2,CONVERT(varchar(50),0x446f7369657273797374656d20766f6c756d65747269736368) COLLATE DATABASE_DEFAULT
- SET IDENTITY_INSERT [dbo].[tbl_technologiclasse] OFF ;SET IDENTITY_INSERT [dbo].[tbl_technologiclasse] ON Insert into [dbo].[tbl_technologiclasse] ([id],[technologiclasse]) SELECT 3,CONVERT(varchar(50),0x4d697363686572) COLLATE DATABASE_DEFAULT
- SET IDENTITY_INSERT [dbo].[tbl_technologiclasse] OFF ;SET IDENTITY_INSERT [dbo].[tbl_technologiclasse] ON Insert into [dbo].[tbl_technologiclasse] ([id],[technologiclasse]) SELECT 4,CONVERT(varchar(50),0x46756e6b74696f6e) COLLATE DATABASE_DEFAULT
- SET IDENTITY_INSERT [dbo].[tbl_technologiclasse] OFF ;
