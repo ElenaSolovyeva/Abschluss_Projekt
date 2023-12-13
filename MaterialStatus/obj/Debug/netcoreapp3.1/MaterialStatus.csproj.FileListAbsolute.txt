@@ -344,6 +344,7 @@ C:\Users\elena\Dropbox\Dokumente\for_backup\_Abschluss_Projekt\MaterialStatus\ob
 C:\Users\elena\Dropbox\Dokumente\for_backup\_Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.dll
 C:\Users\elena\Dropbox\Dokumente\for_backup\_Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.pdb
 C:\Users\elena\Dropbox\Dokumente\for_backup\_Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.genruntimeconfig.cache
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.csproj.AssemblyReference.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.AssemblyInfoInputs.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.AssemblyInfo.cs
@@ -370,7 +371,9 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NavigationAdminPartial.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\NavigationElementsPartial.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\ProjectLogoPartial.cshtml.g.cs
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\SyloStatus.cshtml.g.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\TblEdelputz1500.cshtml.g.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\TblEdelputz2000.cshtml.g.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\TblGrundputz.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_ViewImports.cshtml.g.cs
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.RazorTargetAssemblyInfo.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.RazorTargetAssemblyInfo.cs
@@ -507,4 +510,3 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\runtimes\wi
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.Views.pdb
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.csproj.CopyComplete
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.genruntimeconfig.cache
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.csproj.AssemblyReference.cache

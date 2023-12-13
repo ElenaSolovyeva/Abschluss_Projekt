@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using MaterialStatus.Models;
-using System.Linq;
+
 
 namespace MaterialStatus.Controllers
 {

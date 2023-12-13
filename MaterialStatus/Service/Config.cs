@@ -14,14 +14,13 @@ namespace MaterialStatus.Service
         public static string ConnectionStringSWBv2 { get; set; }        
         public static string ConnectionStringSWGv2 { get; set; }
 
-        public static int HalleB_Linie1_id { get; set; }
-        public static string HalleB_Linie1_SyloNr { get; set; }
+        public static int Edelputz1500_LineId { get; set; }
+        public static int Edelputz2000_LineId { get; set; }
+        public static int GrundPutz_LinId { get; set; }
 
-        public static int HalleB_Linie3_id { get; set; }
-        public static string HalleB_Linie3_SyloNr { get; set; }
-
-        public static int HalleG_Linie2_id { get; set; }
-        public static string HalleG_SyloNr { get; set; }
+        public static int TestDate_year { get; set; }
+        public static int TestDate_month { get; set; }
+        public static int TestDate_day { get; set; }
 
         public static string CompanyName { get; set; }
         public static string CompanyPhone { get; set; }
