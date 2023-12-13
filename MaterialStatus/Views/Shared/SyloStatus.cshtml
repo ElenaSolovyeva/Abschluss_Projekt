@@ -1,5 +1,4 @@
-﻿@using MaterialStatus.Models
-@using MaterialStatus.Service
+﻿@using MaterialStatus.Service
 @using System
 
 <article class="sylo sylo-halle-b"> <!--Halle B, Line 1 -->
@@ -27,7 +26,7 @@
 
             </tr>
             <!-- foreach -->
-            @foreach (var item in ViewData["DataB"] as List<tbl_dispo>)
+            @foreach (var item in ViewData["DataB"] as List<MaterialStatus.Features.SWB.Models.tbl_dispo>)
             {
                 //if (item.line_id == Config.HalleB_Linie1_id & item.start_time >= new DateTime(2023, 12,01))
                 {

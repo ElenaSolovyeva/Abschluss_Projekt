@@ -5,10 +5,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Compile Remove="Models\ViewComponents\**" />
-    <Content Remove="Models\ViewComponents\**" />
-    <EmbeddedResource Remove="Models\ViewComponents\**" />
-    <None Remove="Models\ViewComponents\**" />
+    <Compile Remove="Features\SWB\Models\ViewComponents\**" />
+    <Content Remove="Features\SWB\Models\ViewComponents\**" />
+    <EmbeddedResource Remove="Features\SWB\Models\ViewComponents\**" />
+    <None Remove="Features\SWB\Models\ViewComponents\**" />
   </ItemGroup>
 
   <ItemGroup>

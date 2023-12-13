@@ -3,18 +3,17 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace MaterialStatus.Models
+namespace MaterialStatus.Features.SWB.Models
 {
-    public class AppDbContext : DbContext
+    public class SwbDbContext : DbContext
     {
         public DbSet<tbl_dispo> tbl_dispo { get; set; }
-        //public DbSet<DispoG> DisposG { get; set; }
-
-        public AppDbContext(DbContextOptions<AppDbContext> options) 
-            : base(options) 
+        
+        public SwbDbContext(DbContextOptions<SwbDbContext> options)
+            : base(options)
         {
             Database.EnsureCreated(); // without migration
-        }       
+        }
 
     }
 }

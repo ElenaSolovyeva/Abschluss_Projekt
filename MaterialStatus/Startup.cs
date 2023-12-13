@@ -6,10 +6,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-using MaterialStatus.Models;
 
 using Microsoft.AspNetCore.Identity;
 using MaterialStatus.Service;
+using MaterialStatus.Features.SWB.Models;
+using MaterialStatus.Features.SWG.Models;
 
 namespace MaterialStatus
 {
@@ -27,9 +28,9 @@ namespace MaterialStatus
             Configuration.Bind("Project", new Config());
             //services.AddMvc();
 
-            services.AddDbContext<AppDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWBv2)); //! ConnectionString_B, ..G
+            services.AddDbContext<SwbDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWBv2)); 
+            services.AddDbContext<SwgDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWGv2));
 
-           
             //--
             services.ConfigureApplicationCookie(options =>
             {

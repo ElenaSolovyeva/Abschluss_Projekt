@@ -2,8 +2,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MaterialStatus.Models
-{
+namespace MaterialStatus.Features.SWG.Models
+{  
+
     [Table("tbl_dispo", Schema = "dbo")]
     public class tbl_dispo
     {
@@ -56,8 +57,7 @@ namespace MaterialStatus.Models
 
         public long? rt_pack_nr { get; set; }
 
-        [Required]
-        public double auftrags_gewicht_ist { get; set; }
+        public double? auftrags_gewicht_ist { get; set; }
 
         [Required]
         [StringLength(50)]
@@ -83,17 +83,9 @@ namespace MaterialStatus.Models
         [StringLength(50)]
         public string Material_SAP { get; set; }
 
-        public long? reihenfolge { get; set; }
+        [StringLength(50)]
+        public string SAP_Auftragsnummer { get; set; }
 
-        public long? gebinde_id { get; set; }
-
-        [Required]
-        public long farb_id { get; set; }
-
-        [StringLength(12)]
-        public string sap_auftragsnr { get; set; }
-
-        [Required]
-        public bool sap_verbucht { get; set; }
+        public long? bad_bag { get; set; }
     }
 }
