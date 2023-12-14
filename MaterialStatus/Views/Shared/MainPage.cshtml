@@ -11,9 +11,15 @@
     @Html.Partial("HeaderMainPagePartial")
     <main class="container">
         <aside class="filter-main">@Html.Partial("ModalFilterMainPartial")</aside> <!-- noch zu implementieren -->        
-        <section class="content-main-page">@Html.Partial("TblEdelputz1500")</section>
-        <section class="content-main-page">@Html.Partial("TblEdelputz2000")</section>
-        <section class="content-main-page">@Html.Partial("TblGrundputz")</section>
+        <section class="content-main-page">
+            @Html.Partial("TblEdelputz1500")
+        </section>
+        <section class="content-main-page">
+             @Html.Partial("TblEdelputz2000")
+        </section>
+        <section class="content-main-page">
+            @Html.Partial("TblGrundputz")
+        </section>
     </main>
     @Html.Partial("FooterPartial")
     <div class="modal-window" id="modal-contact">

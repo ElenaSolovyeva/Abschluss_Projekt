@@ -1,8 +1,8 @@
 ﻿@using MaterialStatus.Features.SWB.Models
 @using MaterialStatus.Service
 
-<article class="table-wrapper"> <!--Halle B, Line 1 -->
-    <h2>Edelputz 1500</h2>    
+<article class="table-wrapper">
+    <h2>Edelputz 1500</h2>
     <table class="table-material">
         <tr class="table-material-row">
             <th class="table-material-header-item">Rezept</th> <!-- => item.Material_Bez -->
@@ -29,10 +29,15 @@
                     <td class="table-material-item">@Math.Round(item.auftrags_gewicht, 2)</td>
                     <td class="table-material-item">@Math.Round(item.auftrags_gewicht_ist, 2)</td>
 
-                    <td class="table-material-item"></td> <!-- Ist Sackzahl -->
+                    <td class="table-material-item">
+                        <!-- Ist Sackzahl -->
+                        @{Sackzahl sackzahl = new Sackzahl(ViewData["DispoB"] as List<MaterialStatus.Features.SWB.Models.tbl_dispo>);}
+                        @sackzahl.GetSackzahlSWB(item.auftragsnr)
+                    </td>
 
-                    <td class="table-material-item"> <!-- Farbbezeichnung -->
-                        @{ 
+                    <td class="table-material-item">
+                        <!-- Farbbezeichnung -->
+                        @{
                             string GetFarbeBezechnung(long farb_id)
                             {
                                 string result = "";
@@ -53,7 +58,8 @@
 
                     <td class="table-material-item">@item.line_id</td>
                     <td class="table-material-item">@item.start_time</td>
-                </tr>         
+                </tr>
+
             }
         }
     </table>
