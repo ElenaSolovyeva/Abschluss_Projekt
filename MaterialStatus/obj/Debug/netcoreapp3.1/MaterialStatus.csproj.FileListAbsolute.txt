@@ -344,7 +344,6 @@ C:\Users\elena\Dropbox\Dokumente\for_backup\_Abschluss_Projekt\MaterialStatus\ob
 C:\Users\elena\Dropbox\Dokumente\for_backup\_Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.dll
 C:\Users\elena\Dropbox\Dokumente\for_backup\_Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.pdb
 C:\Users\elena\Dropbox\Dokumente\for_backup\_Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.genruntimeconfig.cache
-C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.csproj.AssemblyReference.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.GeneratedMSBuildEditorConfig.editorconfig
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.AssemblyInfoInputs.cache
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.AssemblyInfo.cs

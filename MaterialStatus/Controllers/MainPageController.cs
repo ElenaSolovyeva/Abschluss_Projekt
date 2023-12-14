@@ -9,13 +9,14 @@ namespace MaterialStatus.Controllers
     {
         private readonly SwbDbContext contextSWB;
         private readonly SwgDbContext contextSWG;
-        public MainPageController(SwgDbContext contextSWG, SwbDbContext contextSWB) {
+        public MainPageController(SwbDbContext contextSWB, SwgDbContext contextSWG) {
             this.contextSWG = contextSWG;
             this.contextSWB = contextSWB;
         }
         public IActionResult MainPage()
         {
-            ViewData["DataB"] = contextSWB.tbl_dispo.ToList();
+            ViewData["DispoB"] = contextSWB.tbl_dispo.ToList();
+            ViewData["FarbeBezeichnungB"] = contextSWB.tbl_stueckliste_historie_kopf.ToList();
             ViewData["DataG"] = contextSWG.tbl_dispo.ToList();
 
             return View();

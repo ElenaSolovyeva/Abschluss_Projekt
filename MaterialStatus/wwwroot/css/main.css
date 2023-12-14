@@ -740,7 +740,7 @@ ul {
   padding: 2px 3px;
   border: 1px solid #aaaaaa; }
   .table-material-item:nth-child(n+2) {
-    text-align: right; }
+    text-align: center; }
 
 .contetnt-main-page.scss {
   display: flex;
