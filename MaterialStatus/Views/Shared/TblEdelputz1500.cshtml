@@ -32,7 +32,7 @@
                     <td class="table-material-item">
                         <!-- Ist Sackzahl -->
                         @{Sackzahl sackzahl = new Sackzahl(ViewData["DispoB"] as List<MaterialStatus.Features.SWB.Models.tbl_dispo>);}
-                        @sackzahl.GetSackzahlSWB(item.auftragsnr)
+                        @sackzahl.GetSackzahlSWB(item.auftragsnr, Config.Edelputz1500_LineId)
                     </td>
 
                     <td class="table-material-item">

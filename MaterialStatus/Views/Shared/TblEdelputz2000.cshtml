@@ -1,5 +1,43 @@
-﻿@using MaterialStatus.Service
-@using System
+﻿@using MaterialStatus.Features.SWB.Models
+@using MaterialStatus.Service
 
+<article class="table-wrapper">
+    <h2>Edelputz 2000</h2>
+    <table class="table-material">
+        <tr class="table-material-row">
+            <th class="table-material-header-item">Rezept</th> <!-- => item.Material_Bez -->
+            <th class="table-material-header-item">C. Soll</th> <!-- => item.chargenanzahl_soll -->
+            <th class="table-material-header-item">C. Ist</th> <!-- => item.chargenanzahl_ist -->
+            <th class="table-material-header-item">Soll, Kg</th> <!-- => item.auftrags_gewicht -->
+            <th class="table-material-header-item">Ist, Kg </th> <!-- => item.auftrags_gewicht_ist -->
+            <th class="table-material-header-item">Ist Sackzahl</th> <!-- ?? -->
+           
+            <th class="table-material-header-item">LineId</th>
+            <th class="table-material-header-item">StartTime</th>
+        </tr>
 
+        @foreach (var item in ViewData["DispoB"] as List<MaterialStatus.Features.SWB.Models.tbl_dispo>)
+        {
+            if (item.line_id == Config.Edelputz2000_LineId
+                & item.start_time > TimeRange.BeginnTestTime
+                & item.start_time < TimeRange.EndTestTime)
+            {
+                <tr class="table-material-row">
+                    <td class="table-material-item">@item.Material_Bez</td>
+                    <td class="table-material-item">@item.chargenanzahl_soll</td>
+                    <td class="table-material-item">@item.chargenanzahl_ist</td>
+                    <td class="table-material-item">@Math.Round(item.auftrags_gewicht, 2)</td>
+                    <td class="table-material-item">@Math.Round(item.auftrags_gewicht_ist, 2)</td>
+                    <!-- Ist Sackzahl -->
+                    <td class="table-material-item">
+                        @{Sackzahl sackzahl = new Sackzahl(ViewData["DispoB"] as List<MaterialStatus.Features.SWB.Models.tbl_dispo>);}
+                        @sackzahl.GetSackzahlSWB(item.auftragsnr, Config.Edelputz2000_LineId)
+                    </td>        
+                    <td class="table-material-item">@item.line_id</td>
+                    <td class="table-material-item">@item.start_time</td>
+                </tr>
 
+            }
+        }
+    </table>
+</article>

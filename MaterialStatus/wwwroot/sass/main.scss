@@ -103,6 +103,7 @@ ul {
 @import "blocks/nav-items.scss";
 @import "blocks/functional-nav.scss";
 @import "blocks/main-page-link.scss";
+@import "blocks/content-main-page.scss";
 @import "blocks/user-name.scss";
 @import "blocks/admin-area-link.scss";
 @import "blocks/help-link.scss";
@@ -116,7 +117,7 @@ ul {
 //--Table
 @import "blocks/table-material.scss";
 //--Contetnt (main-page)
-@import "blocks/contetnt-main-page.scss";
+@import "blocks/content-main-page.scss";
 @import "blocks/sylo.scss";
 //--Filter (main-page)
 @import "blocks/filter.scss";

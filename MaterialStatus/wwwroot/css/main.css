@@ -315,11 +315,12 @@ template {
 .container {
   flex-grow: 1;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   padding: 80px 0 20px 20px; }
 
 .container-login {
   flex-direction: column;
+  justify-content: center;
   align-items: center; }
 
 html {
@@ -539,6 +540,11 @@ ul {
   .main-page-link:active {
     opacity: 0.5; }
 
+.content-main-page {
+  /*    display: flex;
+    justify-content: space-between;*/
+  margin: 10px; }
+
 .user-name {
   position: relative;
   min-width: 200px;
@@ -742,9 +748,10 @@ ul {
   .table-material-item:nth-child(n+2) {
     text-align: center; }
 
-.contetnt-main-page.scss {
-  display: flex;
-  justify-content: center; }
+.content-main-page {
+  /*    display: flex;
+    justify-content: space-between;*/
+  margin: 10px; }
 
 .sylo {
   display: flex;

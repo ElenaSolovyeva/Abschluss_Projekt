@@ -11,45 +11,39 @@ namespace MaterialStatus.Service
     public class Sackzahl
     {
         private List<MaterialStatus.Features.SWB.Models.tbl_dispo> dispoListSWB;
-        private readonly SwbDbContext contextB;
-        private readonly SwgDbContext contextG;
-        private const int lineId = 3;
+        private List<MaterialStatus.Features.SWG.Models.tbl_dispo> dispoListSWG;
         public string result = "n.A.";
 
         public Sackzahl(List<MaterialStatus.Features.SWB.Models.tbl_dispo> dispoList) 
         {
             dispoListSWB = dispoList;
         }
-        public Sackzahl(SwbDbContext context) 
+
+        public Sackzahl(List<MaterialStatus.Features.SWG.Models.tbl_dispo> dispoList)
         {
-            contextB = context;
+            dispoListSWG = dispoList;
         }
 
-        public Sackzahl(SwgDbContext context)
-        {
-            contextG = context;            
-        }
-
-        public string GetSackzahlSWB(string auftragsNr)
+        public string GetSackzahlSWB(string auftragsNr, int lineId)
         {
             foreach (var row in dispoListSWB) 
             {
-                if (row.auftragsnr == auftragsNr & row.line_id == lineId)
+                if (row.auftragsnr == auftragsNr & row.line_id == 3)
                     result = row.chargenanzahl_ist.ToString();
             }
             
             return result;         
         }
+
+        public string GetSackzahlSWG(string auftragsNr, int lineId)
+        {
+            foreach (var row in dispoListSWG)
+            {
+                if (row.auftragsnr == auftragsNr & row.line_id == 3) // line_id == 3 so ist im Projekt Quick_Mix_StatusScreen definiert
+                    result = row.chargenanzahl_ist.ToString();
+            }
+
+            return result;
+        }
     }
 }
-
-//public string GetSackzahlSWB(string auftragsNr)
-//{
-//    foreach (var row in contextB.tbl_dispo)
-//    {
-//        if (row.auftragsnr == auftragsNr & row.line_id == lineId)
-//            result = row.chargenanzahl_ist.ToString();
-//    }
-
-//    return result;
-//}
