@@ -11,12 +11,15 @@ namespace MaterialStatus.Service
         public static string Version { get; set; }
 
         public static string ConnectionStringTest { get; set; }
-        public static string ConnectionStringSWBv2 { get; set; }        
-        public static string ConnectionStringSWGv2 { get; set; }
+        public static string ConnectionStringSWB { get; set; }        
+        public static string ConnectionStringSWG { get; set; }
 
         public static int Edelputz1500_LineId { get; set; }
         public static int Edelputz2000_LineId { get; set; }
         public static int GrundPutz_LinId { get; set; }
+
+        public static int FirstSyloId_SWG { get; set; }
+        public static int LastSyloId_SWG { get; set; }
 
         public static int TestDate_year { get; set; }
         public static int TestDate_month { get; set; }

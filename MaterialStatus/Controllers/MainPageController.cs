@@ -2,7 +2,6 @@
 using System.Linq;
 using MaterialStatus.Features.SWB.Models;
 using MaterialStatus.Features.SWG.Models;
-using MaterialStatus.Features.SWGLager.Models;
 
 namespace MaterialStatus.Controllers
 {
@@ -11,8 +10,7 @@ namespace MaterialStatus.Controllers
         private readonly SwbDbContext contextSWB;
         private readonly SwgDbContext contextSWG;
         
-        public MainPageController(SwbDbContext contextSWB,
-                                  SwgDbContext contextSWG)
+        public MainPageController(SwbDbContext contextSWB, SwgDbContext contextSWG)
         {
             this.contextSWB = contextSWB;
             this.contextSWG = contextSWG;
@@ -24,6 +22,7 @@ namespace MaterialStatus.Controllers
             ViewData["FarbeBezeichnungB"] = contextSWB.tbl_stueckliste_historie_kopf.ToList();
             ViewData["DispoG"] = contextSWG.tbl_dispo.ToList();
             ViewData["LagerG"] = contextSWG.tbl_lager.ToList();
+            ViewData["MaterialG"] = contextSWG.tbl_material.ToList();
 
             return View();
         }

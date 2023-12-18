@@ -6,12 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
-
-using Microsoft.AspNetCore.Identity;
 using MaterialStatus.Service;
 using MaterialStatus.Features.SWB.Models;
 using MaterialStatus.Features.SWG.Models;
-using MaterialStatus.Features.SWGLager.Models;
 
 namespace MaterialStatus
 {
@@ -29,11 +26,9 @@ namespace MaterialStatus
             Configuration.Bind("Project", new Config());
             //services.AddMvc();
 
-            services.AddDbContext<SwbDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWBv2)); 
-            services.AddDbContext<SwgDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWGv2));
-            services.AddDbContext<SwgLagerDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWGv2));
-
-            //--
+            services.AddDbContext<SwbDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWB)); 
+            services.AddDbContext<SwgDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWG));
+            
             services.ConfigureApplicationCookie(options =>
             {
                 options.Cookie.Name = "myCompanyAuth";
@@ -65,7 +60,6 @@ namespace MaterialStatus
 
             app.UseRouting();
 
-            //--
             app.UseCookiePolicy();
             app.UseAuthentication();
             app.UseAuthorization();

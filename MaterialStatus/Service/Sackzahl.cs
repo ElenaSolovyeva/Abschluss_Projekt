@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using MaterialStatus.Features.SWB.Models;
-using MaterialStatus.Features.SWG.Models;
+﻿using System.Collections.Generic;
 
 namespace MaterialStatus.Service
 {

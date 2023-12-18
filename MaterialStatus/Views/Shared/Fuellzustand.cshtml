@@ -1,0 +1,37 @@
+﻿@using MaterialStatus.Features.SWG.Models
+@using MaterialStatus.Service
+
+@foreach (var item in ViewData["LagerG"] as List<MaterialStatus.Features.SWG.Models.tbl_lager>)
+    {
+        if (item.id >= Config.FirstSyloId_SWG & item.id <= Config.LastSyloId_SWG) 
+        {
+<article class="lager-place">
+    <h2 lager-place-header>
+        Silo: <span class="lager-big-font">@item.bezeichnung</span>
+        / Füllstand: <span class="lager-big-font">@Math.Round(item.bestand_aktuell / 1000, 2)</span>
+    </h2>
+
+    @{string materialName = "nicht gefunden";
+        foreach (var row in ViewData["MaterialG"] as List<MaterialStatus.Features.SWG.Models.tbl_material>)
+        {
+            if (item.fid_material == row.id)
+            {
+                materialName = row.bezeichnung;
+                break;
+            }
+        } 
+    }
+
+    <p>Material: <span>@materialName</span></p>
+    
+    <div>
+        <img />
+        <div>
+            <div></div>
+            <p></p>
+        </div>
+    </div>
+</article>
+        }
+    
+    }

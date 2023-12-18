@@ -9,18 +9,25 @@
 </head>
 <body>
     @Html.Partial("HeaderMainPagePartial")
-    <main class="container">
-        <aside class="filter-main">@Html.Partial("ModalFilterMainPartial")</aside> <!-- noch zu implementieren -->        
-        <section class="content-main-page">
-            @Html.Partial("TblEdelputz1500")
-        </section>
-        <section class="content-main-page">
-             @Html.Partial("TblEdelputz2000")
-        </section>
-        <section class="content-main-page">
-            @Html.Partial("TblGrundputz")
-        </section>
-    </main>
+    <div class="container">
+        <aside class="filter-main">@Html.Partial("ModalFilterMainPartial")</aside> <!-- noch zu implementieren -->
+        <main>
+            <section class="content-main-page">
+                <h2 class="visually-hidden">Tabelle für Edelputz 1500, Edelputz 2000 und Grundputz</h2>
+                @Html.Partial("TblEdelputz1500")
+                @Html.Partial("TblEdelputz2000")
+                @Html.Partial("TblGrundputz")
+            </section>
+            <section class="content-main-page">
+                <h2 class="visually-hidden">Füllzustand, Halle G</h2>
+                @Html.Partial("Fuellzustand")
+            </section>
+            <section class="content-main-page">
+                <!-- todo -->
+            </section>
+        </main>
+    </div>
+   
     @Html.Partial("FooterPartial")
     <div class="modal-window" id="modal-contact">
         @Html.Partial("ModalContactPartial")

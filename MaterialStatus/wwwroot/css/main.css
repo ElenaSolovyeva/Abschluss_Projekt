@@ -410,9 +410,6 @@ ul {
 #halle-g-button {
   display: block; }
 
-#halle-g-button {
-  display: block; }
-
 #alle-hallen-button {
   display: block; }
 
@@ -541,9 +538,8 @@ ul {
     opacity: 0.5; }
 
 .content-main-page {
-  /*    display: flex;
-    justify-content: space-between;*/
-  margin: 10px; }
+  display: flex;
+  justify-content: space-between; }
 
 .user-name {
   position: relative;
@@ -727,6 +723,9 @@ ul {
   width: 612px;
   height: 420px; }
 
+.table-wrapper {
+  margin: 10px; }
+
 .table-material {
   height: auto;
   border: 1px solid #aaaaaa;
@@ -749,9 +748,8 @@ ul {
     text-align: center; }
 
 .content-main-page {
-  /*    display: flex;
-    justify-content: space-between;*/
-  margin: 10px; }
+  display: flex;
+  justify-content: space-between; }
 
 .sylo {
   display: flex;
@@ -814,9 +812,6 @@ ul {
   display: none; }
 
 #halle-b-button {
-  display: block; }
-
-#halle-g-button {
   display: block; }
 
 #halle-g-button {

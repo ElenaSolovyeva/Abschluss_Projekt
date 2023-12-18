@@ -4,13 +4,13 @@ var btnHalleB = document.getElementById('btnHalleB');
 var btnHalleG = document.getElementById('btnHalleG');
 var btnAlleHallen = document.getElementById('btnAlleHallen');
 
-var sylos = document.querySelectorAll('.sylo');
+var mainFilteritems = document.querySelectorAll('.main-filter-item');
 
 
 btnHalleB.addEventListener('click', function () {
     
-    sylos.forEach(current => {
-        if (current.classList.contains('sylo-halle-g'))
+    mainFilteritems.forEach(current => {
+        if (current.classList.contains('halle-g'))
             current.classList.add('visually-hidden');
         else
             current.classList.remove('visually-hidden');
@@ -19,8 +19,8 @@ btnHalleB.addEventListener('click', function () {
 
 btnHalleG.addEventListener('click', function () {
 
-    sylos.forEach(current => {
-        if (current.classList.contains('sylo-halle-b'))
+    mainFilteritems.forEach(current => {
+        if (current.classList.contains('halle-b'))
             current.classList.add('visually-hidden');
         else
             current.classList.remove('visually-hidden');
@@ -30,7 +30,7 @@ btnHalleG.addEventListener('click', function () {
 
 btnAlleHallen.addEventListener('click', function () {
 
-    sylos.forEach(current => {
+    mainFilteritems.forEach(current => {
         current.classList.remove('visually-hidden');
     })
 });
