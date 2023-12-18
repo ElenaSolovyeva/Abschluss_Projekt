@@ -11,6 +11,7 @@ using Microsoft.AspNetCore.Identity;
 using MaterialStatus.Service;
 using MaterialStatus.Features.SWB.Models;
 using MaterialStatus.Features.SWG.Models;
+using MaterialStatus.Features.SWGLager.Models;
 
 namespace MaterialStatus
 {
@@ -30,6 +31,7 @@ namespace MaterialStatus
 
             services.AddDbContext<SwbDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWBv2)); 
             services.AddDbContext<SwgDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWGv2));
+            services.AddDbContext<SwgLagerDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWGv2));
 
             //--
             services.ConfigureApplicationCookie(options =>
