@@ -1,11 +1,31 @@
 ﻿.lager-place {
-
+    width: 300px;
+    margin: 19px;
+    padding: 10px;
+    border: 1px solid $border-color;
 }
 
-.lager-place-header {
-
+.lager-header {
+    font-size: 16px;
+    font-weight: normal;
 }
 
-.lager-big-font {
+.lager-header-accent {    
+    font-size: 20px;
+    font-weight: bold;
+}
 
+.lager-paragraph-wrapper {
+    display: flex;
+}
+
+.lager-paragraph {   
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.lager-paragraph-accent {
+    padding: 0 0 0 6px;
+    font-size: 16px;
+    font-weight: bold;
 }

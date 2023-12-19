@@ -539,7 +539,8 @@ ul {
 
 .content-main-page {
   display: flex;
-  justify-content: space-between; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .user-name {
   position: relative;
@@ -576,6 +577,12 @@ ul {
 
 .logout-link:hover::before {
   background-image: url("/images/icon_logout_hover.svg"); }
+
+.home-link::before {
+  background-image: url("/images/icon_home.svg"); }
+
+.home-link:hover::before {
+  background-image: url("/images/icon_home_hover.svg"); }
 
 .footer {
   display: flex;
@@ -747,9 +754,36 @@ ul {
   .table-material-item:nth-child(n+2) {
     text-align: center; }
 
+.lager-place {
+  width: 300px;
+  margin: 19px;
+  padding: 10px;
+  border: 1px solid #aaaaaa; }
+
+.lager-header {
+  font-size: 16px;
+  font-weight: normal; }
+
+.lager-header-accent {
+  font-size: 20px;
+  font-weight: bold; }
+
+.lager-paragraph-wrapper {
+  display: flex; }
+
+.lager-paragraph {
+  font-size: 16px;
+  font-weight: normal; }
+
+.lager-paragraph-accent {
+  padding: 0 0 0 6px;
+  font-size: 16px;
+  font-weight: bold; }
+
 .content-main-page {
   display: flex;
-  justify-content: space-between; }
+  flex-wrap: wrap;
+  justify-content: center; }
 
 .sylo {
   display: flex;

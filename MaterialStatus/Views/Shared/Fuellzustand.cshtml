@@ -6,9 +6,9 @@
         if (item.id >= Config.FirstSyloId_SWG & item.id <= Config.LastSyloId_SWG) 
         {
 <article class="lager-place">
-    <h2 lager-place-header>
-        Silo: <span class="lager-big-font">@item.bezeichnung</span>
-        / Füllstand: <span class="lager-big-font">@Math.Round(item.bestand_aktuell / 1000, 2)</span>
+    <h2 class="lager-header">
+        Silo: <span class="lager-header-accent">@item.bezeichnung</span>
+        / Füllstand: <span class="lager-header-accent">@Math.Round(item.bestand_aktuell / 1000, 2) T</span>
     </h2>
 
     @{string materialName = "nicht gefunden";
@@ -22,8 +22,11 @@
         } 
     }
 
-    <p>Material: <span>@materialName</span></p>
-    
+<div class="lager-paragraph-wrapper">
+    <p class="lager-paragraph">Material: </p>
+    <p class="lager-paragraph-accent">@materialName</p>
+</div>
+   
     <div>
         <img />
         <div>
