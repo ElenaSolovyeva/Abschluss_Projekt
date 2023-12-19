@@ -755,12 +755,13 @@ ul {
     text-align: center; }
 
 .lager-place {
-  width: 300px;
+  width: 250px;
   margin: 19px;
   padding: 10px;
   border: 1px solid #aaaaaa; }
 
 .lager-header {
+  margin: 0;
   font-size: 16px;
   font-weight: normal; }
 
@@ -769,7 +770,8 @@ ul {
   font-weight: bold; }
 
 .lager-paragraph-wrapper {
-  display: flex; }
+  display: flex;
+  margin: 10px 0 0 0; }
 
 .lager-paragraph {
   font-size: 16px;
@@ -779,6 +781,39 @@ ul {
   padding: 0 0 0 6px;
   font-size: 16px;
   font-weight: bold; }
+
+.lager-display-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 10px 0 0 0; }
+
+.lager-image {
+  margin: 0 10px;
+  width: 70px;
+  height: 120px; }
+
+.lager-scale-value {
+  text-align: center; }
+
+.scale {
+  margin: 4px 10px 0 10px; }
+
+.scale-item {
+  display: block;
+  width: 30px;
+  height: 2px; }
+
+.scale-item-overflow {
+  background-color: red;
+  border-bottom: 0.5px solid #990000; }
+
+.scale-item-normal {
+  background-color: orange;
+  border-bottom: 0.5px solid #dc4c18; }
+
+.scale-item-incomplete {
+  background-color: lightgray;
+  border-bottom: 0.5px solid gray; }
 
 .content-main-page {
   display: flex;

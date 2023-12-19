@@ -25,15 +25,36 @@
 <div class="lager-paragraph-wrapper">
     <p class="lager-paragraph">Material: </p>
     <p class="lager-paragraph-accent">@materialName</p>
-</div>
-   
-    <div>
-        <img />
-        <div>
-            <div></div>
-            <p></p>
-        </div>
+</div> 
+    
+<div class="lager-display-wrapper">
+    <img class="lager-image" src="~/images/img_silo.png"/>
+    <div class="lager-scale-wrapper">
+        <ul class="scale">
+            @for (int y = 99; y >= 0; y-= 2)
+            {
+                if (y < Math.Round(item.bestand_aktuell / 1000, 2))
+                {
+                    if (Math.Round(item.bestand_aktuell / 1000, 2) >= 100)
+                    {
+                        <li class="scale-item scale-item-overflow"></li>
+                    }
+                    else
+                    {
+                        <li class="scale-item scale-item-normal"></li>
+                    }
+                }
+                else
+                {
+                    <li class="scale-item scale-item-incomplete"></li>
+                }
+            }
+        </ul>
+        <p class="lager-scale-value">
+            @Math.Round(item.bestand_aktuell * 100 / item.bestand_max, 1)<span>%</span>
+        </p>
     </div>
+</div>
 </article>
         }
     

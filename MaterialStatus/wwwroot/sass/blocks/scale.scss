@@ -1,0 +1,25 @@
+﻿.scale {
+    margin: 4px 10px 0 10px;
+}
+
+.scale-item {
+    display: block;
+    width: 30px;
+    height: 2px;    
+}
+
+.scale-item-overflow {
+    background-color: red;
+    border-bottom: 0.5px solid #990000;
+}
+
+
+.scale-item-normal {
+    background-color: orange;
+    border-bottom: 0.5px solid #dc4c18;
+}
+
+.scale-item-incomplete {
+    background-color: lightgray;
+    border-bottom: 0.5px solid gray;
+}
