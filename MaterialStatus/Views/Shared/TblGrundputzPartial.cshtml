@@ -20,7 +20,22 @@
             if (item.start_time > TimeRange.BeginnTestTime
                 & item.start_time < TimeRange.EndTestTime)
             {
-                <tr class="table-material-row">
+                long status = item.status;
+                string bgc; // backgroundcolor
+
+                switch (status)
+                {
+                    case 4:
+                        bgc = "lightgreen";
+                        break;
+                    case 1:
+                        bgc = "yellow";
+                        break;
+                    default:
+                        bgc = "white";
+                        break;
+                }
+                <tr class="table-material-row" style="background-color: @bgc;">
                     <td class="table-material-item">@item.Material_Bez</td>
                     <td class="table-material-item">@item.chargenanzahl_soll</td>
                     <td class="table-material-item">@item.chargenanzahl_ist</td>
