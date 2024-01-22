@@ -17,7 +17,7 @@
         </tr>
 
         @foreach (var item in ViewData["DispoB"] as List<MaterialStatus.Features.SWB.Models.tbl_dispo>)
-            {
+         {
                 if (item.line_id == Config.Edelputz1500_LineId
                     & item.start_time > TimeRange.BeginnTestTime
                     & item.start_time < TimeRange.EndTestTime)
@@ -49,38 +49,38 @@
                     <td class="table-material-item">
                         <!-- Ist Sackzahl -->
                         @{Sackzahl sackzahl = new Sackzahl(ViewData["DispoB"] as List<MaterialStatus.Features.SWB.Models.tbl_dispo>);}
-            @sackzahl.GetSackzahlSWB(item.auftragsnr, Config.Edelputz1500_LineId)
+                        @sackzahl.GetSackzahlSWB(item.auftragsnr, Config.Edelputz1500_LineId)
                     </td>
 
                     <td class="table-material-item">
                         <!-- Farbbezeichnung -->
                         @{
                             string GetFarbeBezechnung(long farb_id)
-            {
-                string result = "";
+                            {
+                                string result = "";
 
-                foreach (var row in ViewData["FarbeBezeichnungB"] as List<MaterialStatus.Features.SWB.Models.tbl_stueckliste_historie_kopf>)
-                {
-                    if (row.Fid_Material == farb_id)
-                    {
-                        result = row.Bezeichnung.ToString();
-                        break;
-                    }
+                                foreach (var row in ViewData["FarbeBezeichnungB"] as List<MaterialStatus.Features.SWB.Models.tbl_stueckliste_historie_kopf>)
+                                {
+                                    if (row.Fid_Material == farb_id)
+                                    {
+                                        result = row.Bezeichnung.ToString();
+                                        break;
+                                    }
+                                }
+                                return result;
+                            }
+                         }
+                         @GetFarbeBezechnung(item.farb_id)
+                    </td>
+
+
+                    <td class="table-material-item">@item.line_id</td>
+
+                    <td class="table-material-item">@item.start_time</td>
+
+                </tr>
                 }
-                return result;
-            }
-        }
-        @GetFarbeBezechnung(item.farb_id)
-    </td>
-
-
-    <td class="table-material-item">@item.line_id</td>
-
-    <td class="table-material-item">@item.start_time</td>
-
-</tr>
-            }
-        }
+         }
     </table>
 </article>
 
