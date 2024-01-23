@@ -7,20 +7,20 @@ namespace MaterialStatus.Service
 {
     public class MaterialBezeichnung
     {
-        List<tbl_material> materials;
+        //List<tbl_material> materials;
 
-        public string GetMaterialBezeichnung(long materialId) 
-        {
-            string result = "not found";
+        //public string GetMaterialBezeichnung(long materialId) 
+        //{
+        //    string result = "not found";
 
-            foreach (var item in materials)
-            {
-                if (item.id == materialId)
-                    result = item.bezeichnung;
-                break;
-            }
+        //    foreach (var item in materials)
+        //    {
+        //        if (item.id == materialId)
+        //            result = item.bezeichnung;
+        //        break;
+        //    }
 
-            return result;
-        }        
+        //    return result;
+        //}        
     }
 }
