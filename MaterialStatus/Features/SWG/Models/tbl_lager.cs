@@ -58,5 +58,7 @@ namespace MaterialStatus.Features.SWG.Models
         public Int32 aktiv { get; set; }
 
         public Int32? aktiv1 { get; set; }
+        [ForeignKey ("id")]
+        public virtual tbl_material Tbl_Material { get; set; }
     }
 }

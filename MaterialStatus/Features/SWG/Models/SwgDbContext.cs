@@ -8,6 +8,7 @@ namespace MaterialStatus.Features.SWG.Models
         public DbSet<tbl_dispo> tbl_dispo { get; set; }
         public DbSet<tbl_lager> tbl_lager { get; set; }
         public DbSet<tbl_material> tbl_material { get; set; }
+        public DbSet<tbl_equipement_dosier> tbl_equipement_dosier { get; set; }
 
         public SwgDbContext(DbContextOptions<SwgDbContext> options)
             : base(options)

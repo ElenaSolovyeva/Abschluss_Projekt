@@ -16,9 +16,11 @@ namespace MaterialStatus.Features.SWG.Models
         public double? Nachlauf { get; set; }
         public double? Tol_Plus { get; set; }
         public double? Tol_Minus { get; set; }
-        public int? AH_Impulse { get; set; }
-        public int? AH_Pause { get; set; }
+        public Int32? AH_Impuse { get; set; }
+        public Int32? AH_Pause { get; set; }
         public long? equipement_Id { get; set; }
+
+ 
         public long? lager_Id { get; set; }
         public int? Dreh_Grob { get; set; }
         public int? Dreh_Fein { get; set; }
@@ -45,7 +47,7 @@ namespace MaterialStatus.Features.SWG.Models
 
         [Required]
         [Column(TypeName = "varchar(50)")]
-        public string OPC_AH_Impulse { get; set; }
+        public string OPC_AH_Impuse { get; set; }
 
         [Required]
         [Column(TypeName = "varchar(50)")]
@@ -62,5 +64,8 @@ namespace MaterialStatus.Features.SWG.Models
         [Required]
         [Column(TypeName = "varchar(50)")]
         public string OPC_SPS { get; set; }
+
+        [ForeignKey("Id")]
+        public virtual tbl_lager ? tmptbl_lager { get; set; }
     }
 }

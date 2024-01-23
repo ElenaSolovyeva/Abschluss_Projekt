@@ -25,6 +25,34 @@ FROM tbl_equipement_dosier ED
 	INNER JOIN tbl_material M ON L.fid_material = M.id
 Where L.aktiv =  1 AND L.aktiv1 = 1
 
+-- Rhodos_SWG
+SELECT DISTINCT lager_id FROM [Rodos_SWG].[dbo].[tbl_equipement_dosier] ED
+inner join tbl_lager L ON L.ID = ED.lager_id
+WHERE L.aktiv = 1 AND L.aktiv =1
+
+SELECT * FROM tbl_lager 
+SELECT * FROM tbl_material
+
+-- Rhodos_SWB
+SELECT	DISTINCT L.sap_bezeichnung
+		--,E.equipementname AS E_equipmentname 
+		--,M.materialgruppe AS M_materialgruppe 
+		--,M.sap_bezeichnung AS M_sap_bezeichnung 
+		--,M.bezeichnung AS M_bezeichnung
+		,L.id AS L_id
+		--,L.bestand_aktuell AS L_bestand_aktuell 
+		--,L.bestand_max AS L_bestand_max
+		--,L.bestand_min AS L_bestand_min		 
+		--,L.sap_bezeichnung AS L_sap_bezeichnung
+		--,ED.Silo AS ED_Silo
+		--,ED.lager_id AS ED_lager
+FROM 
+	tbl_equipement_dosier ED 
+	INNER JOIN tbl_equipement E ON E.Id = ED.equipement_id
+	INNER JOIN tbl_Lager L ON L.Id = ED.lager_id
+	INNER JOIN tbl_material M ON L.fid_material = M.id
+WHERE L.aktiv =  1 AND L.aktiv1 = 1 
+ORDER BY L.id
 
 #Layout:
  
