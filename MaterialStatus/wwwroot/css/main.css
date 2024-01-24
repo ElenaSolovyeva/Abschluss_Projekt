@@ -439,9 +439,9 @@ ul {
     opacity: 1; }
 
 .project-logo {
-  width: 190px;
-  height: 30px;
-  margin: 5px;
+  width: 235px;
+  height: 60px;
+  margin: 0;
   font-size: 26px;
   font-weight: bold;
   text-align: center; }
@@ -463,6 +463,8 @@ ul {
   align-items: center; }
 
 .main-nav-left-block {
+  display: flex;
+  justify-content: space-between;
   width: 30%;
   margin-left: 2%; }
 
@@ -479,7 +481,7 @@ ul {
   display: flex;
   justify-content: space-around;
   margin: 0 10px 0 10px;
-  width: 280px; }
+  width: 360px; }
 
 .nav-item {
   display: block;
@@ -584,6 +586,11 @@ ul {
 .home-link:hover::before {
   background-image: url("/images/icon_home_hover.svg"); }
 
+.heading-2 {
+  margin-top: 50px;
+  font-size: 50px;
+  text-align: left; }
+
 .table-wrapper {
   margin: 10px; }
 
@@ -609,53 +616,52 @@ ul {
     text-align: center; }
 
 .lager-place {
-  width: 250px;
+  width: 335px;
   margin: 19px;
-  padding: 10px;
+  padding: 25px 10px 25px 25px;
   border: 1px solid #aaaaaa; }
 
 .lager-header {
-  margin: 0;
-  font-size: 16px;
-  font-weight: normal; }
-
-.lager-header-accent {
-  font-size: 20px;
-  font-weight: bold; }
+  margin: 20px 0 0 0;
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: underline; }
 
 .lager-paragraph-wrapper {
   display: flex;
   margin: 10px 0 0 0; }
 
 .lager-paragraph {
-  font-size: 16px;
-  font-weight: normal; }
+  margin-top: 15px;
+  font-size: 26px; }
 
 .lager-paragraph-accent {
-  padding: 0 0 0 6px;
-  font-size: 16px;
+  font-size: 26px;
   font-weight: bold; }
 
 .lager-display-wrapper {
   display: flex;
-  justify-content: center;
-  margin: 10px 0 0 0; }
+  justify-content: start;
+  margin: 10px 0 20px 0; }
 
 .lager-image {
-  margin: 0 10px;
-  width: 70px;
-  height: 120px; }
+  width: 100px;
+  height: 155px; }
+
+.lager-scale-wrapper {
+  margin-left: 30px; }
 
 .lager-scale-value {
+  margin: 8px 0 0 0;
   text-align: center; }
 
 .scale {
-  margin: 4px 10px 0 10px; }
+  margin: 5px 10px 0 10px; }
 
 .scale-item {
   display: block;
-  width: 30px;
-  height: 2px; }
+  width: 40px;
+  height: 2.5px; }
 
 .scale-item-overflow {
   background-color: red;

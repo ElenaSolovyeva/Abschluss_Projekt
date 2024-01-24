@@ -6,5 +6,9 @@
   {
     "outputFile": "wwwroot/sass/blocks/filter-button.css",
     "inputFile": "wwwroot/sass/blocks/filter-button.scss"
+  },
+  {
+    "outputFile": "wwwroot/js/script.js",
+    "inputFile": "wwwroot/js/filter-main-page.js"
   }
 ]

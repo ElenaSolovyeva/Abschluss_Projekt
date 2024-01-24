@@ -1,4 +1,4 @@
-"use strict";
+﻿"use strict";
 
 var btnHalleB = document.getElementById('btnHalleB');
 var btnHalleG = document.getElementById('btnHalleG');

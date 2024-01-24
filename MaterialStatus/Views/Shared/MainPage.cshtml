@@ -3,7 +3,7 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>MainPage</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon_material_status.ico">
+    <link rel="icon" type="image/x-icon" href="/images/favicon-quick-mix.ico">
     <link type="text/css" rel="stylesheet" href="~/css/main.min.css" asp-append-version="true" />
     <script src="/js/script.min.js" async asp-append-version="true"></script>
 </head>
@@ -18,12 +18,12 @@
                 @Html.Partial("TblEdelputz2000Partial")
                 @Html.Partial("TblGrundputzPartial")
             </section>
-            <section class="content-main-page">
+            <section class="content-main-page main-filter-item halle-g">
                 <h2 class="visually-hidden">Füllzustand, Halle G</h2>
                 @Html.Partial("Fuellzustand")
             </section>
-            <section class="content-main-page">
-                <h2>Rohstoffe, Halle G</h2>
+            <section class="content-main-page main-filter-item halle-g">
+                <h2 class="heading-2">Rohstoffe, Halle G</h2>
                 <div class="content-main-page">
                     @Html.Partial("RohstoffSilosG")
                 </div>

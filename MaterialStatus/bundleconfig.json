@@ -2,8 +2,7 @@
   {
     "outputFileName": "wwwroot/js/script.js",
     "inputFiles": [
-      "wwwroot/js/filter-main-page.js",
-      "wwwroot/js/modal-contact.js"
+      "wwwroot/js/filter-main-page.js"     
     ]
   }
 ]

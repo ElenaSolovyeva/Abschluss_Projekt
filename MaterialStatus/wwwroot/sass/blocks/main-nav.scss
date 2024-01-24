@@ -13,6 +13,8 @@
 }
 
 .main-nav-left-block {
+    display: flex;
+    justify-content: space-between;
     width: 30%;
     margin-left: 2%;    
 }

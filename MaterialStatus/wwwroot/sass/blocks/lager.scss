@@ -1,19 +1,15 @@
 ﻿.lager-place {
-    width: 250px;
+    width: 335px;
     margin: 19px;
-    padding: 10px;
+    padding: 25px 10px 25px 25px;
     border: 1px solid $border-color;
 }
 
 .lager-header {
-    margin: 0;
-    font-size: 16px;
-    font-weight: normal;
-}
-
-.lager-header-accent {    
-    font-size: 20px;
+    margin: 20px 0 0 0;
+    font-size: 26px;
     font-weight: bold;
+    text-decoration: underline;
 }
 
 .lager-paragraph-wrapper {
@@ -21,32 +17,32 @@
     margin: 10px 0 0 0;
 }
 
-.lager-paragraph {   
-    font-size: 16px;
-    font-weight: normal;
+.lager-paragraph {
+    margin-top: 15px;
+    font-size: 26px;
 }
 
 .lager-paragraph-accent {
-    padding: 0 0 0 6px;
-    font-size: 16px;
+    font-size: 26px;
     font-weight: bold;
 }
 
+
 .lager-display-wrapper {
     display: flex;
-    justify-content: center;
-    margin: 10px 0 0 0;
+    justify-content: start;
+    margin: 10px 0 20px 0;
 }
 
 .lager-image {
-    margin: 0 10px;
-    width: 70px;
-    height: 120px;
+    width: 100px;
+    height: 155px;
 }
 .lager-scale-wrapper {
-
+    margin-left: 30px;
 }
 
 .lager-scale-value {
+    margin: 8px 0 0 0;
     text-align: center;
 }
