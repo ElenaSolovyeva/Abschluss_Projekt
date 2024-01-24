@@ -587,7 +587,7 @@ ul {
   background-image: url("/images/icon_home_hover.svg"); }
 
 .heading-2 {
-  margin-top: 50px;
+  margin: 50px 40px;
   font-size: 50px;
   text-align: left; }
 

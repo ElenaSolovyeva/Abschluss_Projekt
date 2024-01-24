@@ -9,29 +9,29 @@
     <h2 class="lager-header">
         Silo: <span>@item.bezeichnung</span>
     </h2>
-        @{string materialName = "nicht gefunden";
-            foreach (var row in ViewData["MaterialG"] as List<MaterialStatus.Features.SWG.Models.tbl_material>)
+
+    @{string materialName = "nicht gefunden";
+        foreach (var row in ViewData["MaterialG"] as List<MaterialStatus.Features.SWG.Models.tbl_material>)
+        {
+            if (item.fid_material == row.id)
             {
-                if (item.fid_material == row.id)
-                {
-                    materialName = row.bezeichnung;
-                    break;
-                }
+                materialName = row.bezeichnung;
+                break;
             }
         }
-    <!-- div class="lager-paragraph-wrapper"   ZU -->
+    }
+
     <p class="lager-paragraph lager-paragraph-accent">@materialName</p>
-
-
+    
     <div class="lager-display-wrapper">
-        <img class="lager-image" src="~/images/img_silo.png" />
+        <img class="lager-image" src="~/images/img_silo_gp.png" />
         <div class="lager-scale-wrapper">
             <ul class="scale">
-                @for (int y = 99; y >= 0; y -= 2)
+                @for (int y = 100; y >= 0; y -= 2)
                 {
-                    if (y < Math.Round(item.bestand_aktuell / 1000, 2))
+                    if (y < Math.Round(100 * item.bestand_aktuell / item.bestand_max, 0))
                     {
-                        if (Math.Round(item.bestand_aktuell / 1000, 2) >= 100)
+                        if (Math.Round(100 * item.bestand_aktuell / item.bestand_max, 0) >= 100)
                         {
                             <li class="scale-item scale-item-overflow"></li>
                         }
@@ -47,7 +47,7 @@
                 }
             </ul>
             <p class="lager-scale-value">
-                @Math.Round(item.bestand_aktuell * 100 / item.bestand_max, 1)<span>%</span>
+                @Math.Round(item.bestand_aktuell * 100 / item.bestand_max, 0)<span>%</span>
             </p>
         </div>
     </div>
