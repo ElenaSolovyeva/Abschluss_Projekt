@@ -1,23 +1,39 @@
-﻿@using MaterialStatus.Service
-@*@using MaterialStatus.Models*@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 <head>
     <meta name="viewport" content="width=device-width" />
-    <title>Login</title>
+    <title>MainPage</title>
     <link rel="icon" type="image/x-icon" href="/images/favicon-quick-mix.ico">
-    <link type="text/css" rel="stylesheet" href="~/css/main.min.css" asp-append-version="true"/>
-    
+    <link type="text/css" rel="stylesheet" href="~/css/main.min.css" asp-append-version="true" />
+    <script src="/js/script.min.js" async asp-append-version="true"></script>
 </head>
 <body>
-    @Html.Partial("HeaderLoginPartial")
+    @Html.Partial("HeaderMainPagePartial")
+    <div class="container">
+        <aside class="filter-main">@Html.Partial("ModalFilterMainPartial")</aside> <!-- noch zu implementieren -->
+        <main>
+            <section class="">
+                <h2 class="visually-hidden">Tabelle für Edelputz 1500, Edelputz 2000 und Grundputz</h2>
+                <div class="content-main-page">
+                    @Html.Partial("TblEdelputz1500Partial")
+                    @Html.Partial("TblEdelputz2000Partial")
+                    @Html.Partial("TblGrundputzPartial")
+                </div>
+            </section>
+            <section class="main-filter-item halle-g">
+                <h2 class="heading-2">Füllzustand, Grundputz</h2>
+                <div class="content-main-page">
+                    @Html.Partial("Fuellzustand")
+                </div>
+            </section>
+            <section class="main-filter-item halle-g">
+                <h2 class="heading-2">Rohstoffe, Grundputz</h2>
+                <div class="content-main-page">
+                    @Html.Partial("RohstoffSilosG")
+                </div>
 
-    <main class="container container-login">
-        <p class="tmp">Diese Seite befindet sich im Development-Modus</p>
-        <p class="tmp">Login und navigation ohne Passwort</p>
-        <a class="tmp-link" href="MainPage">to main page ></a>
-        <a class="tmp-link" href="AdminArea">to admin area ></a>
-    </main>
-    
+            </section>
+        </main>
+    </div>
 </body>
 </html>
