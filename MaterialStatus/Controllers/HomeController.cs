@@ -18,7 +18,7 @@ namespace MaterialStatus.Controllers
             this.contextSWG = contextSWG;
         }
 
-        public IActionResult MainPage()
+        public IActionResult Index()
         {
             ViewData["DispoB"] = contextSWB.tbl_dispo.ToList();
             ViewData["FarbeBezeichnungB"] = contextSWB.tbl_stueckliste_historie_kopf.ToList();

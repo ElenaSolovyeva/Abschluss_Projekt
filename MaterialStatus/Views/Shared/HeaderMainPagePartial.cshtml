@@ -1,24 +1,10 @@
 ﻿
 <header class="header">
     <nav class="main-nav">
-        <div class="main-nav-block main-nav-left-block">  
-             @Html.Partial("NavigationElementsPartial")
-        </div>
+        <div class="main-nav-block main-nav-left-block"></div>
         <div class="main-nav-block main-nav-center-block">
-            <p class="nav-item user-name">John Snow</p>
+            @Html.Partial("NavigationElementsPartial")
         </div>
-        <div class="main-nav-right-block">
-            <ul class="functional-nav main-nav-block">
-                <!--<li class="functional-nav-item">-->
-                    @*<a class="admin-area-link main-page-link" href="AdminArea">Adminbereich</a>*@
-                <!--</li>-->
-                <li class="functional-nav-item">
-                    <a class="help-link main-page-link">Hilfe</a>
-                </li>
-                <li class="functional-nav-item">
-                    <a class="logout-link main-page-link" href="https://localhost:44340/">Ausloggen</a>
-                </li>               
-            </ul>
-        </div>
+        <div class="main-nav-right-block"></div>
     </nav>
 </header>
