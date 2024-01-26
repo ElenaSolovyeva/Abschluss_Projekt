@@ -1,9 +1,0 @@
-﻿.home-link {
-    &::before {
-        background-image: url("/images/icon_home.svg");
-    }
-
-    &:hover::before {
-        background-image: url("/images/icon_home_hover.svg");
-    }
-}
