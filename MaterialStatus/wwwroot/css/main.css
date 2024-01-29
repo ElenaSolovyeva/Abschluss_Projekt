@@ -404,51 +404,9 @@ ul {
   background-color: #f0f0f0;
   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5); }
 
-#halle-b-button {
-  display: block; }
-
-#halle-g-button {
-  display: block; }
-
-#alle-hallen-button {
-  display: block; }
-
-.filter-button {
-  height: 24px;
-  background-color: transparent; }
-  .filter-button:hover {
-    box-shadow: 0 3px 0 #ff6b00;
-    opacity: 0.7; }
-  .filter-button:focus {
-    box-shadow: 0 3px 0 #ff6b00;
-    opacity: 1; }
-
-.burger-button {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto 0;
-  width: 24px;
-  height: 24px;
-  background-size: 24px 24px;
-  background-image: url("/images/icon_burger.svg"); }
-  .burger-button:hover {
-    background-image: url("/images/icon_burger_hover.svg"); }
-  .burger-button:focus {
-    background-image: url("/images/icon_burger_hover.svg");
-    opacity: 1; }
-
-.project-logo {
-  width: 235px;
-  height: 60px;
-  margin: 0;
-  font-size: 26px;
-  font-weight: bold;
-  text-align: center; }
-
-.project-logo .first-char {
-  color: #ff6b00; }
-
+/*@import "blocks/filter-button.scss";
+@import "blocks/burger-button.scss";
+@import "blocks/project-logo.scss";*/
 .main-nav {
   display: flex;
   flex-wrap: wrap;
@@ -505,91 +463,21 @@ ul {
   display: block;
   height: 26px; }
 
-.main-page-link {
-  position: relative;
-  height: 24px;
-  padding-left: 30px;
-  font-size: 20px;
-  text-align: left; }
-  .main-page-link::before {
-    display: block;
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
-    background-size: 24px 24px; }
-  .main-page-link:hover::before {
-    display: block;
-    position: absolute;
-    content: " ";
-    top: 0;
-    left: 0;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
-    background-size: 24px 24px; }
-  .main-page-link:hover {
-    box-shadow: 0 3px #ff6b00;
-    opacity: 0.8; }
-  .main-page-link:active {
-    opacity: 0.5; }
-
+/*@import "blocks/main-page-link.scss";*/
 .content-main-page {
   display: flex;
   flex-wrap: wrap;
   justify-content: center; }
 
-.user-name {
-  position: relative;
-  min-width: 200px;
-  text-align: left;
-  opacity: 0.6; }
-  .user-name::before {
-    display: block;
-    position: absolute;
-    content: " ";
-    top: -2px;
-    left: -30px;
-    width: 24px;
-    height: 24px;
-    border: none;
-    background-color: transparent;
-    background-size: 24px 24px;
-    background-image: url("/images/icon_user.png"); }
-
-.admin-area-link::before {
-  background-image: url("/images/icon_admin.svg"); }
-
-.admin-area-link:hover::before {
-  background-image: url("/images/icon_admin_hover.svg"); }
-
-.help-link::before {
-  background-image: url("/images/icon_help.svg"); }
-
-.help-link:hover::before {
-  background-image: url("/images/icon_help_hover.svg"); }
-
-.logout-link::before {
-  background-image: url("/images/icon_logout.svg"); }
-
-.logout-link:hover::before {
-  background-image: url("/images/icon_logout_hover.svg"); }
-
-.home-link::before {
-  background-image: url("/images/icon_home.svg"); }
-
-.home-link:hover::before {
-  background-image: url("/images/icon_home_hover.svg"); }
-
+/*@import "blocks/user-name.scss";
+@import "blocks/admin-area-link.scss";
+@import "blocks/help-link.scss";
+@import "blocks/logout-link.scss";*/
+/*@import "blocks/home-link.scss";*/
 .heading-2 {
   margin: 50px 40px;
   font-size: 50px;
-  text-align: left; }
+  text-align: center; }
 
 .table-wrapper {
   margin: 10px; }
@@ -737,10 +625,11 @@ ul {
 #Sylo-G-2 {
     display: flex;
 }*/
-.filter-main {
-  display: none; }
-
+/*@import "blocks/filter.scss";*/
 #halle-b-button {
+  display: block; }
+
+#halle-g-button {
   display: block; }
 
 #halle-g-button {

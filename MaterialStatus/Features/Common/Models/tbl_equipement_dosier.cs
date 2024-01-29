@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
-namespace MaterialStatus.Features.SWG.Models
+namespace MaterialStatus.Features.Common.Models
 {
     [Table("tbl_equipement_dosier")]
     public class tbl_equipement_dosier

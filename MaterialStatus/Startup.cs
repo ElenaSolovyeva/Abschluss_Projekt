@@ -9,6 +9,7 @@ using Microsoft.Extensions.Hosting;
 using MaterialStatus.Service;
 using MaterialStatus.Features.SWB.Models;
 using MaterialStatus.Features.SWG.Models;
+using MaterialStatus.Features.Common.Models;
 
 namespace MaterialStatus
 {
@@ -24,11 +25,10 @@ namespace MaterialStatus
         public void ConfigureServices(IServiceCollection services)
         {            
             Configuration.Bind("Project", new Config());
-            //services.AddMvc();
-
+            
             services.AddDbContext<SwbDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWB)); 
             services.AddDbContext<SwgDbContext>(item => item.UseSqlServer(Config.ConnectionStringSWG));
-            
+           
             services.ConfigureApplicationCookie(options =>
             {
                 options.Cookie.Name = "myCompanyAuth";

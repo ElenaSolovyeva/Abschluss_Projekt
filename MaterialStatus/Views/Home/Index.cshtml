@@ -10,13 +10,19 @@
 <body>
     @Html.Partial("HeaderPartial")
     <div class="container">
-       <main>
+        <main>
             <section class="">
                 <h2 class="visually-hidden">Tabelle für Edelputz 1500, Edelputz 2000 und Grundputz</h2>
                 <div class="content-main-page">
                     @Html.Partial("TblEdelputz1500Partial")
                     @Html.Partial("TblEdelputz2000Partial")
                     @Html.Partial("TblGrundputzPartial")
+                </div>
+            </section>
+            <section class="main-filter-item halle-b">
+                <h2 class="heading-2">Rohstoffe, Edelputz</h2>
+                <div class="content-main-page">
+                    @Html.Partial("RohstoffSilosB")
                 </div>
             </section>
             <section class="main-filter-item halle-g">
@@ -30,7 +36,6 @@
                 <div class="content-main-page">
                     @Html.Partial("RohstoffSilosG")
                 </div>
-
             </section>
         </main>
     </div>
