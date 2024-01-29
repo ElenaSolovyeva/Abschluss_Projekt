@@ -38,6 +38,7 @@ namespace MaterialStatus.Features.SWB.Models
         [Required]
         public double kapazität { get; set; }
 
+       
         [Required]
         [MaxLength(50)]
         public string opc_kapaz { get; set; }
@@ -60,5 +61,6 @@ namespace MaterialStatus.Features.SWB.Models
         public Int32? aktiv1 { get; set; }
         [ForeignKey ("id")]
         public virtual tbl_material Tbl_Material { get; set; }
+        
     }
 }

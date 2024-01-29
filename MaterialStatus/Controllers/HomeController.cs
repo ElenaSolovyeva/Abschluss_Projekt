@@ -1,6 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using System.Linq;
-using MaterialStatus.Features.Common.Models;
 using MaterialStatus.Features.SWB.Models;
 using MaterialStatus.Features.SWG.Models;
 using System;
@@ -24,13 +23,14 @@ namespace MaterialStatus.Controllers
             ViewData["DispoB"] = contextSWB.tbl_dispo.ToList();
             ViewData["LagerB"] = contextSWB.tbl_lager.ToList();
             ViewData["MaterialB"] = contextSWB.tbl_material.ToList();
-            ViewData["FarbeBezeichnungB"] = contextSWB.tbl_stueckliste_historie_kopf.ToList();           
-            
+            ViewData["FarbeBezeichnungB"] = contextSWB.tbl_stueckliste_historie_kopf.ToList();
+      
             ViewData["DispoG"] = contextSWG.tbl_dispo.ToList();
             ViewData["LagerG"] = contextSWG.tbl_lager.ToList();
             ViewData["MaterialG"] = contextSWG.tbl_material.ToList();
 
             ViewData["EquipementDosierB"] = contextSWB.tbl_equipement_dosier.ToList();
+            
             List<String?> rohstoffSilosB = new List<String?>();
 
             foreach (var eqDosier in ViewData["EquipementDosierB"]
@@ -47,8 +47,9 @@ namespace MaterialStatus.Controllers
                 }
             }
 
-            rohstoffSilosB.Sort();
-            ViewData["RohstoffSilosB"] = rohstoffSilosB;
+            ViewData["RohstoffSilosB"] = this.SortBysiloNr(rohstoffSilosB);
+            //rohstoffSilosB.Sort();
+            //ViewData["RohstoffSilosB"] = rohstoffSilosB;
 
             ViewData["EquipementDosierG"] = contextSWG.tbl_equipement_dosier.ToList();            
             List<String?> rohstoffSilosG = new List<String?>();
@@ -68,11 +69,30 @@ namespace MaterialStatus.Controllers
             }
 
             rohstoffSilosG.Sort();
-            ViewData["RohstoffSilosG"] = rohstoffSilosG;
-
-            
+            ViewData["RohstoffSilosG"] = rohstoffSilosG;            
 
             return View();
+        }
+
+        public List<String?> SortBysiloNr(List<String?> siloNumbers)
+        {     
+            for (int i = 0; i < siloNumbers.Count; i++)
+            {
+                for (int j = i; j < siloNumbers.Count - i - 1; j++)
+                {
+                    int first = int.Parse(siloNumbers[j].Trim('S', 'i', 'l', 'o').Trim());
+                    int second = int.Parse(siloNumbers[j].Trim('S', 'i', 'l', 'o').Trim());
+
+                    if (first > second)
+                    {
+                        String tmp = siloNumbers[j];
+                        siloNumbers[j] = siloNumbers[j + 1];
+                        siloNumbers[j + 1] = tmp;
+                    }
+                }             
+            }
+
+            return siloNumbers;
         }
     }
 }

@@ -9,7 +9,7 @@ using Microsoft.Extensions.Hosting;
 using MaterialStatus.Service;
 using MaterialStatus.Features.SWB.Models;
 using MaterialStatus.Features.SWG.Models;
-using MaterialStatus.Features.Common.Models;
+//using MaterialStatus.Features.Common.Models;
 
 namespace MaterialStatus
 {
@@ -44,7 +44,8 @@ namespace MaterialStatus
             });
 
             services.AddControllersWithViews()
-                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0).AddSessionStateTempDataProvider();
+                .SetCompatibilityVersion(CompatibilityVersion.Version_3_0)
+                .AddSessionStateTempDataProvider(); 
                 
 
         }

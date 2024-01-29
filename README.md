@@ -1,5 +1,11 @@
 ### Abschluss_Projekt: Material Status
 
+#Daten aktualisieren
+
+https://learn.microsoft.com/en-us/aspnet/core/mvc/views/view-compilation?view=aspnetcore-8.0&viewFallbackFrom=aspnetcore-3.0&tabs=visual-studio
+
+https://alexanderzeitler.com/articles/refresh-asp-net-core-website-without-reloading-application/
+
 #SQL-Anfragen:
 
 
