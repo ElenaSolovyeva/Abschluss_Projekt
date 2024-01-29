@@ -2,57 +2,61 @@
 @using MaterialStatus.Service
 
 @foreach (var silo in ViewData["RohstoffSilosB"] as List<String?>)
-{
+{  
     foreach (var lagerB in ViewData["LagerB"] as List<MaterialStatus.Features.SWB.Models.tbl_lager>)
-    {
-
-        foreach (var materialB in ViewData["MaterialB"] as List<MaterialStatus.Features.SWB.Models.tbl_material>)
         {
-            if (lagerB.fid_material == materialB.id && lagerB.sap_bezeichnung == silo)
+            if (lagerB.sap_bezeichnung == silo)
             {
-                <article class="lager-place">
-                    <h2 class="lager-header">
-                        <span>@lagerB.sap_bezeichnung</span>
-                    </h2>
+                foreach (var materialB in ViewData["MaterialB"] as List<MaterialStatus.Features.SWB.Models.tbl_material>)
+                {
+                    if (lagerB.fid_material == materialB.id && lagerB.sap_bezeichnung == silo)
+                    {
+                        <article class="lager-place">
+                            <h2 class="lager-header">
+                                <span>@lagerB.sap_bezeichnung</span>
+                            </h2>
 
-                    <p class="lager-paragraph lager-paragraph-accent">@materialB.bezeichnung</p>
-  
-                    <div class="lager-display-wrapper">
-                        <img class="lager-image" src="~/images/img_silo_ep.png" />
-                        <div class="lager-scale-wrapper">
-                            <ul class="scale">
-                                @for (int y = 99; y >= 0; y -= 2)
-                                {
-                                    if (y < Math.Round(100 * lagerB.bestand_aktuell / lagerB.bestand_max, 0))
-                                    {
-                                        if (Math.Round(100 * lagerB.bestand_aktuell / lagerB.bestand_max, 0) >= 100)
+                            <p class="lager-paragraph lager-paragraph-accent">@materialB.bezeichnung</p>
+
+                            <div class="lager-display-wrapper">
+                                <img class="lager-image" src="~/images/img_silo_ep.png" />
+                                <div class="lager-scale-wrapper">
+                                    <ul class="scale">
+                                        @for (int y = 99; y >= 0; y -= 2)
                                         {
-                                            <li class="scale-item scale-item-overflow"></li>
+                                            if (y < Math.Round(100 * lagerB.bestand_aktuell / lagerB.bestand_max, 0))
+                                            {
+                                                if (Math.Round(100 * lagerB.bestand_aktuell / lagerB.bestand_max, 0) >= 100)
+                                                {
+                                                    <li class="scale-item scale-item-overflow"></li>
+                                                }
+                                                else
+                                                {
+                                                    <li class="scale-item scale-item-normal"></li>
+                                                }
+                                            }
+                                            else
+                                            {
+                                                <li class="scale-item scale-item-incomplete"></li>
+                                            }
                                         }
-                                        else
-                                        {
-                                            <li class="scale-item scale-item-normal"></li>
-                                        }
-                                    }
-                                    else
-                                    {
-                                        <li class="scale-item scale-item-incomplete"></li>
-                                    }
-                                }
-                            </ul>
-                            <p class="lager-scale-value">
-                                @Math.Round(lagerB.bestand_aktuell * 100 / lagerB.bestand_max, 0)<span>%</span>
+                                    </ul>
+                                    <p class="lager-scale-value">
+                                        @Math.Round(lagerB.bestand_aktuell * 100 / lagerB.bestand_max, 0)<span>%</span>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <p class="lager-paragraph">
+                                Füllstand:
+                                <span class="lager-paragraph lager-paragraph-accent">@Math.Round(lagerB.bestand_aktuell / 1000, 2) t</span>
                             </p>
-                        </div>
-                    </div>
 
-                    <p class="lager-paragraph">
-                        Füllstand:
-                        <span class="lager-paragraph lager-paragraph-accent">@Math.Round(lagerB.bestand_aktuell / 1000, 2) t</span>
-                    </p>
-
-                </article>
+                        </article>
+                        break;
+                    }
+                }
             }
-        }
-    }
+
+        }    
 }

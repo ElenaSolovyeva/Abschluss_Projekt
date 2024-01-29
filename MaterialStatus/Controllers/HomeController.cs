@@ -31,45 +31,48 @@ namespace MaterialStatus.Controllers
 
             ViewData["EquipementDosierB"] = contextSWB.tbl_equipement_dosier.ToList();
             
-            List<String?> rohstoffSilosB = new List<String?>();
+            List<String?> rohstoffSilosB = new List<String?>(); 
 
-            foreach (var eqDosier in ViewData["EquipementDosierB"]
-                       as List<MaterialStatus.Features.SWB.Models.tbl_equipement_dosier>)
+            foreach (var lagerB in ViewData["LagerB"]
+                            as List<MaterialStatus.Features.SWB.Models.tbl_lager>) 
             {
-                foreach (var lagerB in ViewData["LagerB"]
-                            as List<MaterialStatus.Features.SWB.Models.tbl_lager>)
+                foreach (var eqDosier in ViewData["EquipementDosierB"]
+                       as List<MaterialStatus.Features.SWB.Models.tbl_equipement_dosier>)
                 {
-                    if (eqDosier.lager_Id == lagerB.id
+                    if (lagerB.id == eqDosier.lager_Id
                         && lagerB.aktiv == 1
                         && lagerB.aktiv1 == 1)
-
+                    {
                         rohstoffSilosB.Add(lagerB.sap_bezeichnung);
+                        break;
+                    }                    
                 }
             }
 
             ViewData["RohstoffSilosB"] = this.SortBysiloNr(rohstoffSilosB);
-            //rohstoffSilosB.Sort();
-            //ViewData["RohstoffSilosB"] = rohstoffSilosB;
+            
 
             ViewData["EquipementDosierG"] = contextSWG.tbl_equipement_dosier.ToList();            
             List<String?> rohstoffSilosG = new List<String?>();
 
-            foreach (var eqDosier in ViewData["EquipementDosierG"]
-                        as List<MaterialStatus.Features.SWG.Models.tbl_equipement_dosier>)
+            foreach (var lagerG in ViewData["LagerG"]
+                            as List<MaterialStatus.Features.SWG.Models.tbl_lager>)                
             {
-                foreach (var lagerG in ViewData["LagerG"]
-                            as List<MaterialStatus.Features.SWG.Models.tbl_lager>)
+                foreach (var eqDosier in ViewData["EquipementDosierG"]
+                        as List<MaterialStatus.Features.SWG.Models.tbl_equipement_dosier>)
                 {
                     if (eqDosier.lager_Id == lagerG.id
                         && lagerG.aktiv == 1
                         && lagerG.aktiv1 == 1)
 
+                    { 
                         rohstoffSilosG.Add(lagerG.sap_bezeichnung);
+                        break;                    
+                    }
                 }
             }
 
-            rohstoffSilosG.Sort();
-            ViewData["RohstoffSilosG"] = rohstoffSilosG;            
+            ViewData["RohstoffSilosG"] = this.SortBysiloNr(rohstoffSilosG);
 
             return View();
         }
@@ -81,7 +84,7 @@ namespace MaterialStatus.Controllers
                 for (int j = i; j < siloNumbers.Count - i - 1; j++)
                 {
                     int first = int.Parse(siloNumbers[j].Trim('S', 'i', 'l', 'o').Trim());
-                    int second = int.Parse(siloNumbers[j].Trim('S', 'i', 'l', 'o').Trim());
+                    int second = int.Parse(siloNumbers[j + 1].Trim('S', 'i', 'l', 'o').Trim());
 
                     if (first > second)
                     {
