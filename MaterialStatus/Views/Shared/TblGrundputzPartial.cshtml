@@ -10,16 +10,18 @@
             <th class="table-material-header-item">C. Ist</th> <!-- => item.chargenanzahl_ist -->
             <th class="table-material-header-item">Soll, Kg</th> <!-- => item.auftrags_gewicht -->
             <th class="table-material-header-item">Ist, Kg </th> <!-- => item.auftrags_gewicht_ist -->
-            
+
             <th class="table-material-header-item">LineId</th>
             <th class="table-material-header-item">StartTime</th>
         </tr>
 
         @foreach (var item in ViewData["DispoG"] as List<MaterialStatus.Features.SWG.Models.tbl_dispo>)
         {
-            if (item.start_time > TimeRange.BeginnTestTime
-                & item.start_time < TimeRange.EndTestTime)
+            if (item.start_time >= DateTime.Today)
+            //(item.start_time > TimeRange.BeginnTestTime
+            // & item.start_time < TimeRange.EndTestTime)
             {
+                Config.GrundPutz_Counter++;
                 long status = item.status;
                 string bgc; // backgroundcolor
 
@@ -43,10 +45,28 @@
                     <td class="table-material-item">@item.auftrags_gewicht_ist</td>
 
                     <td class="table-material-item">@item.line_id</td>
-                    <td class="table-material-item">@item.start_time</td>
+                    <td class="table-material-item">@item.start_time.ToString("g")</td>
                 </tr>
-
             }
+        }
+
+        @if (Config.GrundPutz_Counter == 0)
+        {
+            <tr class="table-material-row">
+                <td class="table-material-item"> </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> </td>
+                <td class="table-material-item"> </td>
+                <td class="table-material-item">@DateTime.Today.ToString("d")</td>
+            </tr>
+        }
+        else
+        {
+            Config.GrundPutz_Counter = 0;
         }
     </table>
 </article>

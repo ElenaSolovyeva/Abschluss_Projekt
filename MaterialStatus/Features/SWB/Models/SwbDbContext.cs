@@ -14,7 +14,7 @@ namespace MaterialStatus.Features.SWB.Models
         public SwbDbContext(DbContextOptions<SwbDbContext> options)
             : base(options)
         {
-            Database.EnsureCreated(); // without migration
+            //Database.EnsureCreated(); // without migration
         }
        
     }

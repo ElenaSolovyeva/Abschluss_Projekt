@@ -11,7 +11,7 @@
             <th class="table-material-header-item">Soll, Kg</th> <!-- => item.auftrags_gewicht -->
             <th class="table-material-header-item">Ist, Kg </th> <!-- => item.auftrags_gewicht_ist -->
             <th class="table-material-header-item">Ist Sackzahl</th> <!-- ?? -->
-           
+
             <th class="table-material-header-item">LineId</th>
             <th class="table-material-header-item">StartTime</th>
         </tr>
@@ -19,9 +19,11 @@
         @foreach (var item in ViewData["DispoB"] as List<MaterialStatus.Features.SWB.Models.tbl_dispo>)
         {
             if (item.line_id == Config.Edelputz2000_LineId
-                & item.start_time > TimeRange.BeginnTestTime
-                & item.start_time < TimeRange.EndTestTime)
+                 & item.start_time >= DateTime.Today)
+            //& item.start_time > TimeRange.BeginnTestTime
+            //& item.start_time < TimeRange.EndTestTime)
             {
+                Config.Edelputz2000_Counter++;
                 long status = item.status;
                 string bgc; // backgroundcolor
 
@@ -48,12 +50,30 @@
                     <td class="table-material-item">
                         @{Sackzahl sackzahl = new Sackzahl(ViewData["DispoB"] as List<MaterialStatus.Features.SWB.Models.tbl_dispo>);}
                         @sackzahl.GetSackzahlSWB(item.auftragsnr, Config.Edelputz2000_LineId)
-                    </td>        
+                    </td>
                     <td class="table-material-item">@item.line_id</td>
-                    <td class="table-material-item">@item.start_time</td>
+                    <td class="table-material-item">@item.start_time.ToString("g")</td>
                 </tr>
 
             }
+        }
+
+        @if (Config.Edelputz2000_Counter == 0)
+        {
+            <tr class="table-material-row">
+                <td class="table-material-item"> </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> 0 </td>
+                <td class="table-material-item"> </td>               
+                <td class="table-material-item">@DateTime.Today.ToString("d")</td>
+            </tr>
+        }
+        else
+        {
+            Config.Edelputz1500_Counter = 0;
         }
     </table>
 </article>

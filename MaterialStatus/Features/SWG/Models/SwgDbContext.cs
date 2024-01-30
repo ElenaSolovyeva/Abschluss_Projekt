@@ -12,7 +12,7 @@ namespace MaterialStatus.Features.SWG.Models
         public SwgDbContext(DbContextOptions<SwgDbContext> options)
             : base(options)
         {
-            Database.EnsureCreated(); // without migration
+            //Database.EnsureCreated(); // without migration
         }
 
     }

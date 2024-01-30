@@ -769,3 +769,4 @@ C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\Microsoft.E
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\System.Text.Encodings.Web.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\bin\Debug\netcoreapp3.1\System.Text.Json.dll
 C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.MvcApplicationPartsAssemblyInfo.cs
+C:\Projects\Abschluss_Projekt\MaterialStatus\obj\Debug\netcoreapp3.1\MaterialStatus.csproj.AssemblyReference.cache
